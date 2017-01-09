@@ -7,16 +7,24 @@
 
     wp_register_style('style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('style'); // Enqueue it!
+
+    wp_register_style('flickity', get_template_directory_uri() . '/stylesheets/flickity.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('flickity'); // Enqueue it!
   }
 
   //load all js
   function load_arm_js()
-  {
-    wp_enqueue_script('jquery');
+{
     wp_enqueue_script(
       'armjs',
       get_template_directory_uri() . '/js/app.js',
       array('jquery'), '1.0',
+      true
+    );
+    wp_enqueue_script(
+      'flictiky',
+      get_template_directory_uri() . '/js/flickity.pkgd.min.js',
+      '1.0',
       true
     );
   }
