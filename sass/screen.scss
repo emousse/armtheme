@@ -1,0 +1,75 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+//BASE
+@import "base";
+
+html, body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: 0 20px;
+  @include clearfix;
+}
+
+.site-content {
+  padding-top: 66px;
+}
+
+a{
+ text-decoration: none;
+ color: inherit;
+}
+
+// HEADER
+
+ .header{
+   position: fixed;
+   left: 0;
+   right: 0;
+   height: 66px;
+
+   line-height: 66px;
+   color: #FFF;
+   background-color: $pri;
+ }
+
+ .header__logo{
+   font-weight: bold;
+   padding: 0 25px;
+   float: left;
+ }
+
+ // MENU
+
+.menu{
+  float: left;
+  ul{
+    margin: 0;
+    padding: 0;
+   li {
+     a{
+       padding: 0 10px;
+       &:hover {
+         color: $sec;
+       }
+     }
+     display: inline-block; /* non-flexbox browsers */
+   }
+  }
+}
+
+//RESPONSIVE
+
+@import "responsive";

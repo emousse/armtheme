@@ -13,24 +13,24 @@
 <body <?php body_class(); ?>>
 
     <!-- wrapper -->
-    <div class="wrapper">
-      <!-- header -->
-        <!-- logo -->
+    <div class="site-container">
+      <!-- pusher -->
+      <div class="site-pusher">
+        <!-- header -->
+        <header class="header">
+          <!-- logo -->
+          <a href="#" class="header__icon" id="header__icon"></a>
+          <a href="#" class="header__logo"><?php bloginfo('name') ?></a>
+          <!-- /logo -->
 
-        <!-- /logo -->
-
-        <!-- nav -->
-          <nav role="navigation">
+          <!-- nav -->
+          <nav class="menu" role="navigation">
   						<?php arm_nav(); ?>
   				</nav>
+          <!-- /nav -->
 
-        <!-- /nav -->
+        </header>
+        <!-- header -->
 
-      </header>
-      <!-- header -->
-      <div class="container">
-        <div class="row">
-          <div class="bg_style col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-          <div class="bg_style col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </div>
-      </div>
+        <!-- site-content -->
+        <div class="site-content">

@@ -1,14 +1,24 @@
 <?php
   //Load all css
   function load_arm_css(){
-    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0', 'all');
-    wp_enqueue_style('bootstrap'); // Enqueue it!
 
-    wp_register_style('armtheme', get_template_directory_uri() . '/css/armtheme.css', array(), '1.0', 'all');
+    wp_register_style('armtheme', get_template_directory_uri() . '/stylesheets/screen.css', array(), '1.0', 'all');
     wp_enqueue_style('armtheme'); // Enqueue it!
 
     wp_register_style('style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('style'); // Enqueue it!
+  }
+
+  //load all js
+  function load_arm_js()
+  {
+    wp_enqueue_script('jquery');
+    wp_enqueue_script(
+      'armjs',
+      get_template_directory_uri() . '/js/app.js',
+      array('jquery'), '1.0',
+      true
+    );
   }
 
   //load menu
@@ -17,10 +27,10 @@
       array(
         'theme_location'  => '',
         'menu'            => '',
-        'container'       => 'div',
-        'container_class' => 'menu-{menu slug}-container',
+        'container'       => '',
+        'container_class' => '',
         'container_id'    => '',
-        'menu_class'      => 'menu',
+        'menu_class'      => '',
         'menu_id'         => '',
         'echo'            => true,
         'fallback_cb'     => 'wp_page_menu',
@@ -36,5 +46,6 @@
   }
 
   //add action
-  add_action('wp_enqueue_scripts','load_arm_css')
+  add_action('wp_enqueue_scripts','load_arm_css');
+  add_action('wp_enqueue_scripts','load_arm_js');
  ?>
