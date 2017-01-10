@@ -7,5 +7,5 @@ jQuery( document ).ready( function( $ ) {
 
   $('#site-cache').click(function(e){
     $('body').removeClass('with--sidebar');
-  })
+  });
 } );

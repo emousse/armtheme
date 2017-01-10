@@ -24,14 +24,7 @@ html, body{
 }
 
 .site-content {
-  position: absolute;
-  top: $menu-height * 2;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding-top: 0;
-  overflow-y: scroll;
-  --webkit-overflow-scrolling:touch;
+  padding-top: $menu-height;
 }
 
 a{
@@ -42,7 +35,6 @@ a{
 // HEADER
 
  .header{
-   position: fixed;
    left: 0;
    right: 0;
    height: $menu-height;
