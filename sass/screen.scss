@@ -25,7 +25,7 @@ html, body{
 
 .site-content {
   position: absolute;
-  top: $menu-height;
+  top: $menu-height * 2;
   right: 0;
   left: 0;
   bottom: 0;
@@ -50,6 +50,12 @@ a{
    line-height: $menu-height;
    color: #FFF;
    background-color: $pri;
+ }
+
+ .topbar{
+   height: $menu-height;
+   line-height: $menu-height;
+   text-align: center;
  }
 
  .header__logo{

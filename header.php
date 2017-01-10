@@ -16,6 +16,11 @@
     <div class="site-container">
       <!-- pusher -->
       <div class="site-pusher">
+        <!-- topbar -->
+        <header class="topbar">
+          LOGO
+        </header>
+        <!-- /topbar -->
         <!-- header -->
         <header class="header">
           <!-- logo -->
