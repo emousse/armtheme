@@ -24,7 +24,14 @@ html, body{
 }
 
 .site-content {
-  padding-top: 66px;
+  position: absolute;
+  top: $menu-height;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 0;
+  overflow-y: scroll;
+  --webkit-overflow-scrolling:touch;
 }
 
 a{
@@ -38,9 +45,9 @@ a{
    position: fixed;
    left: 0;
    right: 0;
-   height: 66px;
+   height: $menu-height;
 
-   line-height: 66px;
+   line-height: $menu-height;
    color: #FFF;
    background-color: $pri;
  }

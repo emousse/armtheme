@@ -9,16 +9,7 @@
     @include transition-duration(0.3s);
     @include transform(translateX(0px));
   }
-  .site-content{
-    position: absolute;
-    top: 66px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding-top: 0;
-    overflow-y: scroll;
-    --webkit-overflow-scrolling:touch;
-  }
+
   .header{
     position: static;
   }
@@ -27,7 +18,7 @@
     display: block;
     float: left;
     width: 50px;
-    height: 66px;
+    height: $menu-height;
 
     cursor: pointer;
 
@@ -52,7 +43,6 @@
 
     width: $menu-width;
     @include transform(translateX($menu-width * -1));
-    @include transition-duration(0.3s);
 
     li{
       display: block !important;

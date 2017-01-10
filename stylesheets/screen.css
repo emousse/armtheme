@@ -21,16 +21,23 @@ html, body {
 
 /* line 26, ../sass/screen.scss */
 .site-content {
-  padding-top: 66px;
+  position: absolute;
+  top: 66px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 0;
+  overflow-y: scroll;
+  --webkit-overflow-scrolling: touch;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .header {
   position: fixed;
   left: 0;
@@ -41,32 +48,32 @@ a {
   background-color: #EB5E28;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .header__logo {
   font-weight: bold;
   padding: 0 25px;
   float: left;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .menu {
   float: left;
 }
-/* line 58, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .menu ul {
   margin: 0;
   padding: 0;
 }
-/* line 61, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .menu ul li {
   display: inline-block;
   /* non-flexbox browsers */
 }
-/* line 62, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .menu ul li a {
   padding: 0 10px;
 }
-/* line 64, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .menu ul li a:hover {
   color: #252422;
 }
@@ -94,24 +101,12 @@ a {
     transform: translateX(0px);
   }
 
-  /* line 12, ../sass/_responsive.scss */
-  .site-content {
-    position: absolute;
-    top: 66px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding-top: 0;
-    overflow-y: scroll;
-    --webkit-overflow-scrolling: touch;
-  }
-
-  /* line 22, ../sass/_responsive.scss */
+  /* line 13, ../sass/_responsive.scss */
   .header {
     position: static;
   }
 
-  /* line 25, ../sass/_responsive.scss */
+  /* line 16, ../sass/_responsive.scss */
   .header__icon {
     position: relative;
     display: block;
@@ -120,7 +115,7 @@ a {
     height: 66px;
     cursor: pointer;
   }
-  /* line 34, ../sass/_responsive.scss */
+  /* line 25, ../sass/_responsive.scss */
   .header__icon:after {
     content: '';
     position: absolute;
@@ -134,7 +129,7 @@ a {
     box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
   }
 
-  /* line 46, ../sass/_responsive.scss */
+  /* line 37, ../sass/_responsive.scss */
   .menu {
     position: absolute;
     left: 0;
@@ -146,12 +141,8 @@ a {
     -ms-transform: translateX(-250px);
     -webkit-transform: translateX(-250px);
     transform: translateX(-250px);
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
   }
-  /* line 57, ../sass/_responsive.scss */
+  /* line 47, ../sass/_responsive.scss */
   .menu li {
     display: block !important;
     height: 40px;
@@ -160,14 +151,14 @@ a {
     border-bottom: 1px solid #252422;
   }
 
-  /* line 69, ../sass/_responsive.scss */
+  /* line 59, ../sass/_responsive.scss */
   .with--sidebar .site-pusher {
     -moz-transform: translateX(250px);
     -ms-transform: translateX(250px);
     -webkit-transform: translateX(250px);
     transform: translateX(250px);
   }
-  /* line 73, ../sass/_responsive.scss */
+  /* line 63, ../sass/_responsive.scss */
   .with--sidebar .site-cache {
     position: absolute;
     top: 0;
