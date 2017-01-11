@@ -24,7 +24,6 @@ html, body{
 }
 
 .site-content {
-  padding-top: $menu-height;
 }
 
 a{
@@ -35,13 +34,12 @@ a{
 // HEADER
 
  .header{
-   left: 0;
-   right: 0;
    height: $menu-height;
 
    line-height: $menu-height;
    color: #FFF;
    background-color: $pri;
+   z-index: 1;
  }
 
  .topbar{
@@ -57,6 +55,11 @@ a{
  }
 
  // MENU
+
+ .fixed{
+   position: fixed;
+   top: 0;
+ }
 
 .menu{
   float: left;
