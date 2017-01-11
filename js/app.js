@@ -23,9 +23,9 @@ return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.document
   //position de l'element "top" par rapport au haut de la fenetre.
   var top = rect.top + scrollY();
 
-  var fake = document.createElement('div');
-  fake.style.width = rect.width + "px";
-  fake.style.height = rect.height +"px";
+  // var fake = document.createElement('div');
+  // fake.style.width = rect.width + "px";
+  // fake.style.height = rect.height +"px";
 
   var onScroll = function() {
     var hasScrollClass = element.classList.contains('fixed');
@@ -33,10 +33,25 @@ return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.document
       element.classList.add('fixed')
       element.style.width = rect.width + "px";
       siteContent.style.paddingTop = rect.height + "px";
+      $('.menu').hide();
     } else if (scrollY()<top && hasScrollClass){
       element.classList.remove('fixed');
       siteContent.style.paddingTop = "";
     }
   }
+
+  var onResize = function(){
+    element.style.width = "auto";
+    element.classList.remove('fixed');
+    siteContent.style.paddingTop = "";
+
+    //on recalcule les variables
+    rect = element.getBoundingClientRect();
+    top = rect.top + scrollY();
+
+    onScroll();
+  }
   window.addEventListener('scroll', onScroll);
+
+  window.addEventListener('resize', onResize);
 } );
