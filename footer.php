@@ -2,8 +2,8 @@
 
         </div><!-- /site-content -->
 
-        <footer><!-- footer -->
-
+        <footer class="footer"><!-- footer -->
+          Copyright
         </footer><!-- /footer -->
 
         <div class="site-cache" id="site-cache"></div>

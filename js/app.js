@@ -33,7 +33,6 @@ return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.document
       element.classList.add('fixed')
       element.style.width = rect.width + "px";
       siteContent.style.paddingTop = rect.height + "px";
-      $('.menu').hide();
     } else if (scrollY()<top && hasScrollClass){
       element.classList.remove('fixed');
       siteContent.style.paddingTop = "";

@@ -14,18 +14,24 @@ html, body {
 
 /* line 21, ../sass/screen.scss */
 .container {
-  margin: 0 20px;
-  overflow: hidden;
-  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .header {
   height: 66px;
   line-height: 66px;
@@ -34,45 +40,53 @@ a {
   z-index: 1;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .topbar {
   height: 66px;
   line-height: 66px;
   text-align: center;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .header__logo {
   font-weight: bold;
   padding: 0 25px;
   float: left;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
+.footer {
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  background-color: #252422;
+}
+
+/* line 67, ../sass/screen.scss */
 .fixed {
   position: fixed;
   top: 0;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .menu {
   float: left;
 }
-/* line 66, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .menu ul {
   margin: 0;
   padding: 0;
 }
-/* line 69, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .menu ul li {
   display: inline-block;
   /* non-flexbox browsers */
 }
-/* line 70, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .menu ul li a {
   padding: 0 10px;
 }
-/* line 72, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .menu ul li a:hover {
   color: #252422;
 }

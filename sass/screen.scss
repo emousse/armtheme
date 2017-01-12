@@ -3,10 +3,10 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass";
-
 //BASE
 @import "base";
+$container-style: magic;
+// $container-width: 50em;
 
 html, body{
   font-family: 'Roboto', sans-serif;
@@ -19,8 +19,7 @@ html, body{
 }
 
 .container{
-  margin: 0 20px;
-  @include clearfix;
+  @include container;
 }
 
 .site-content {
@@ -53,6 +52,15 @@ a{
    padding: 0 25px;
    float: left;
  }
+
+ //FOOTER
+.footer{
+  height: $footer-height;
+  line-height: $footer-height;
+  text-align: center;
+  background-color: $sec;
+}
+
 
  // MENU
 

@@ -1,10 +1,15 @@
+//import
+@import "compass";
+@import "grids";
+
 //color variables
 $pri : #EB5E28;
 $sec : #252422;
-$tie : #FFFCF2;
+$tri : #FFFCF2;
 
 //menu responsive width
 $menu-width: 250px;
 
 //menu bar height
 $menu-height: 66px;
+$footer-height: 66px;
