@@ -3,7 +3,6 @@
     height: 100%;
   }
   .site-container{
-    overflow: hidden;
   }
   .site-pusher{
     @include transition-duration(0.3s);
@@ -11,14 +10,7 @@
   }
 
   .site-content{
-    position: absolute;
-    top: 66px;
-    right: 0;
-    left: 0;
-    bottom: 0;
     padding-top: 0;
-    overflow-y: scroll;
-    --webkit-overflow-scrolling:touch;
   }
 
   .header{
@@ -28,6 +20,7 @@
   .topbar{
     display: none;
   }
+
   .header__icon{
     position: relative;
     display: block;
