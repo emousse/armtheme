@@ -10,6 +10,9 @@
 
     wp_register_style('flickity', get_template_directory_uri() . '/stylesheets/flickity.min.css', array(), '1.0', 'all');
     wp_enqueue_style('flickity'); // Enqueue it!
+
+    wp_register_style('bootstrap_grid', get_template_directory_uri() . '/css/bootstrap-grid.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('bootstrap_grid'); // Enqueue it!
   }
 
   //load all js

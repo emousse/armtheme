@@ -1,24 +1,17 @@
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 768px){
   .site-pusher, .site-container{
     height: 100%;
   }
   .site-container{
-    overflow: hidden;
   }
+
   .site-pusher{
     @include transition-duration(0.3s);
     @include transform(translateX(0px));
   }
 
   .site-content{
-    position: absolute;
-    top: 66px;
-    right: 0;
-    left: 0;
-    bottom: 0;
     padding-top: 0;
-    overflow-y: scroll;
-    --webkit-overflow-scrolling:touch;
   }
 
   .header{
@@ -28,6 +21,7 @@
   .topbar{
     display: none;
   }
+
   .header__icon{
     position: relative;
     display: block;
@@ -73,6 +67,10 @@
   .with--sidebar{
     .site-pusher{
       @include transform(translateX($menu-width));
+    }
+
+    .site-container{
+      overflow: hidden;
     }
 
     .site-cache{
