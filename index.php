@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
-    <h1>Who are you, my warranty?!</h1>
+
 
     <!-- Flickity HTML init -->
     <div class="carousel"
@@ -13,8 +12,9 @@
         <div class="carousel-cell"></div>
     </div>
 
-		<br>
-		<br>
+    <div class="container">
+        <h1>Who are you, my warranty?!</h1>
+
 
     <p>My fellow Earthicans, as I have explained in my book 'Earth in the Balance'', and the much more popular ''Harry
         Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards. You

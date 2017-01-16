@@ -23,7 +23,7 @@ a {
   height: 66px;
   line-height: 66px;
   color: #FFF;
-  background-color: #EB5E28;
+  background-color: #ffd23f;
   z-index: 1;
 }
 
@@ -46,30 +46,43 @@ a {
   height: 66px;
   line-height: 66px;
   text-align: center;
-  background-color: #252422;
+  background-color: #373737;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
+.footer__top {
+  padding: 70px 0;
+  color: white;
+  background-color: #373737;
+}
+
+/* line 69, ../sass/screen.scss */
+.footer__bottom {
+  padding: 20px 0;
+  background-color: #ffd23f;
+}
+
+/* line 77, ../sass/screen.scss */
 .fixed {
   position: fixed;
   top: 0;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .menu {
   float: left;
 }
-/* line 73, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .menu ul {
   margin: 0;
   padding: 0;
 }
-/* line 76, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .menu ul li {
   display: inline-block;
   /* non-flexbox browsers */
 }
-/* line 77, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .menu ul li a {
   display: block;
   text-transform: uppercase;
@@ -81,9 +94,9 @@ a {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 84, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .menu ul li a:hover {
-  color: #252422;
+  color: #373737;
 }
 
 @media only screen and (max-width: 768px) {
@@ -148,7 +161,7 @@ a {
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: #e44f15;
+    background-color: #ffcc26;
     width: 250px;
     -moz-transform: translateX(-250px);
     -ms-transform: translateX(-250px);
@@ -161,7 +174,7 @@ a {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    border-bottom: 1px solid #252422;
+    border-bottom: 1px solid #373737;
   }
 
   /* line 68, ../sass/_responsive.scss */
@@ -185,7 +198,7 @@ a {
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
-/* line 99, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
