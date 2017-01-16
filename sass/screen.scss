@@ -75,7 +75,12 @@ a{
     padding: 0;
    li {
      a{
+       display: block;
+       text-transform: uppercase;
+       font-family: 'Montserrat', sans-serif;
        padding: 0 10px;
+       font-size: 1em;
+       @include transition-duration(0.2s);
        &:hover {
          color: $sec;
        }
@@ -88,3 +93,9 @@ a{
 //RESPONSIVE
 
 @import "responsive";
+
+// BODY
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}

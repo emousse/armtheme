@@ -71,20 +71,28 @@ a {
 }
 /* line 77, ../sass/screen.scss */
 .menu ul li a {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
   padding: 0 10px;
+  font-size: 1em;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
-/* line 79, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .menu ul li a:hover {
   color: #252422;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   /* line 2, ../sass/_responsive.scss */
   .site-pusher, .site-container {
     height: 100%;
   }
 
-  /* line 7, ../sass/_responsive.scss */
+  /* line 8, ../sass/_responsive.scss */
   .site-pusher {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
@@ -96,22 +104,22 @@ a {
     transform: translateX(0px);
   }
 
-  /* line 12, ../sass/_responsive.scss */
+  /* line 13, ../sass/_responsive.scss */
   .site-content {
     padding-top: 0;
   }
 
-  /* line 16, ../sass/_responsive.scss */
+  /* line 17, ../sass/_responsive.scss */
   .header {
     position: static;
   }
 
-  /* line 20, ../sass/_responsive.scss */
+  /* line 21, ../sass/_responsive.scss */
   .topbar {
     display: none;
   }
 
-  /* line 24, ../sass/_responsive.scss */
+  /* line 25, ../sass/_responsive.scss */
   .header__icon {
     position: relative;
     display: block;
@@ -120,7 +128,7 @@ a {
     height: 66px;
     cursor: pointer;
   }
-  /* line 33, ../sass/_responsive.scss */
+  /* line 34, ../sass/_responsive.scss */
   .header__icon:after {
     content: '';
     position: absolute;
@@ -134,7 +142,7 @@ a {
     box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
   }
 
-  /* line 45, ../sass/_responsive.scss */
+  /* line 46, ../sass/_responsive.scss */
   .menu {
     position: absolute;
     left: 0;
@@ -147,7 +155,7 @@ a {
     -webkit-transform: translateX(-250px);
     transform: translateX(-250px);
   }
-  /* line 55, ../sass/_responsive.scss */
+  /* line 56, ../sass/_responsive.scss */
   .menu li {
     display: block !important;
     height: 40px;
@@ -156,14 +164,18 @@ a {
     border-bottom: 1px solid #252422;
   }
 
-  /* line 67, ../sass/_responsive.scss */
+  /* line 68, ../sass/_responsive.scss */
   .with--sidebar .site-pusher {
     -moz-transform: translateX(250px);
     -ms-transform: translateX(250px);
     -webkit-transform: translateX(250px);
     transform: translateX(250px);
   }
-  /* line 71, ../sass/_responsive.scss */
+  /* line 72, ../sass/_responsive.scss */
+  .with--sidebar .site-container {
+    overflow: hidden;
+  }
+  /* line 76, ../sass/_responsive.scss */
   .with--sidebar .site-cache {
     position: absolute;
     top: 0;
@@ -172,4 +184,8 @@ a {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
+}
+/* line 99, ../sass/screen.scss */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
 }
