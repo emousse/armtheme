@@ -1,24 +1,43 @@
 <?php get_header(); ?>
 
 
-
-    <!-- Flickity HTML init -->
-    <div class="carousel"
-         data-flickity='{ "wrapAround": true }'>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
+<!-- Flickity HTML init -->
+<div class="carousel"
+     data-flickity='{ "wrapAround": true }'>
+    <div class="carousel-cell">
+      <img src="<?php bloginfo('template_url')?>/img/1.jpg" alt="">
     </div>
+    <div class="carousel-cell">
+      <img src="<?php bloginfo('template_url')?>/img/2.jpg" alt="">
+    </div>
+    <div class="carousel-cell">
+      <img src="<?php bloginfo('template_url')?>/img/3.jpg" alt="">
+    </div>
+    <div class="carousel-cell">
+      <img src="<?php bloginfo('template_url')?>/img/4.jpg" alt="">
+    </div>
+    <div class="carousel-cell">
+      <img src="<?php bloginfo('template_url')?>/img/5.jpg" alt="">
+    </div>
+</div>
 
+<section class="banner">
     <div class="container">
-        <h1>Who are you, my warranty?!</h1>
+        <h2>
+            TOUT POUR LE BOIS
+
+        </h2>
+        <a href="#" class="blue-btn">VENEZ VOIR</a>
+    </div>
+</section>
+
+<div class="container">
+    <h1>Who are you, my warranty?!</h1>
 
 
-        <a href="#" class="blue-btn">Button</a>
-        <a href="#" class="blue-btn">Button</a>
-        <a href="#" class="blue-btn">Button</a>
+    <a href="#" class="blue-btn">Button</a>
+    <a href="#" class="blue-btn">Button</a>
+    <a href="#" class="blue-btn">Button</a>
     <p>My fellow Earthicans, as I have explained in my book 'Earth in the Balance'', and the much more popular ''Harry
         Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards. You
         wouldn't. Ask anyway!</p>

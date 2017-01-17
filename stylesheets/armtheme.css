@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 1, ../sass/_buttons.scss */
+/* line 1, ../sass/partials/_buttons.scss */
 .blue-btn {
   display: inline-block;
   position: relative;
@@ -23,13 +23,13 @@
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out;
 }
-/* line 19, ../sass/_buttons.scss */
+/* line 19, ../sass/partials/_buttons.scss */
 .blue-btn:hover, .blue-btn:focus {
   color: #FFFCF2;
   text-decoration: none;
   outline: none;
 }
-/* line 26, ../sass/_buttons.scss */
+/* line 26, ../sass/partials/_buttons.scss */
 .blue-btn:active {
   top: 1px;
 }
@@ -39,20 +39,20 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-/* line 37, ../sass/_buttons.scss */
+/* line 37, ../sass/partials/_buttons.scss */
 .blue-btn {
   background-color: transparent;
 }
-/* line 41, ../sass/_buttons.scss */
+/* line 41, ../sass/partials/_buttons.scss */
 .blue-btn:hover, .blue-btn:focus {
   background-color: #ffcd2b;
 }
-/* line 46, ../sass/_buttons.scss */
+/* line 46, ../sass/partials/_buttons.scss */
 .blue-btn:active {
   background-color: #ffcc26;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 10, ../sass/armtheme.scss */
 html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -62,13 +62,13 @@ html, body {
   padding: 0;
 }
 
-/* line 25, ../sass/style.scss */
+/* line 25, ../sass/armtheme.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 32, ../sass/armtheme.scss */
 .header {
   height: 66px;
   line-height: 66px;
@@ -77,21 +77,25 @@ a {
   z-index: 1;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 41, ../sass/armtheme.scss */
 .topbar {
   height: 66px;
   line-height: 66px;
   text-align: center;
+  background: url(../img/ls.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 51, ../sass/armtheme.scss */
 .header__logo {
   font-weight: bold;
   padding: 0 25px;
   float: left;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 58, ../sass/armtheme.scss */
 .footer {
   height: 66px;
   line-height: 66px;
@@ -99,40 +103,40 @@ a {
   background-color: #373737;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 65, ../sass/armtheme.scss */
 .footer__top {
   padding: 70px 0;
   color: white;
   background-color: #373737;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 71, ../sass/armtheme.scss */
 .footer__bottom {
   padding: 20px 0;
   background-color: #ffd23f;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 79, ../sass/armtheme.scss */
 .fixed {
   position: fixed;
   top: 0;
 }
 
-/* line 80, ../sass/style.scss */
+/* line 84, ../sass/armtheme.scss */
 .menu {
   float: left;
 }
-/* line 82, ../sass/style.scss */
+/* line 86, ../sass/armtheme.scss */
 .menu ul {
   margin: 0;
   padding: 0;
 }
-/* line 85, ../sass/style.scss */
+/* line 89, ../sass/armtheme.scss */
 .menu ul li {
   display: inline-block;
   /* non-flexbox browsers */
 }
-/* line 86, ../sass/style.scss */
+/* line 90, ../sass/armtheme.scss */
 .menu ul li a {
   display: block;
   text-transform: uppercase;
@@ -144,18 +148,18 @@ a {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 93, ../sass/style.scss */
+/* line 97, ../sass/armtheme.scss */
 .menu ul li a:hover {
   color: #373737;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 2, ../sass/_responsive.scss */
+  /* line 2, ../sass/partials/_responsive.scss */
   .site-pusher, .site-container {
     height: 100%;
   }
 
-  /* line 8, ../sass/_responsive.scss */
+  /* line 8, ../sass/partials/_responsive.scss */
   .site-pusher {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
@@ -167,22 +171,22 @@ a {
     transform: translateX(0px);
   }
 
-  /* line 13, ../sass/_responsive.scss */
+  /* line 13, ../sass/partials/_responsive.scss */
   .site-content {
     padding-top: 0;
   }
 
-  /* line 17, ../sass/_responsive.scss */
+  /* line 17, ../sass/partials/_responsive.scss */
   .header {
     position: static;
   }
 
-  /* line 21, ../sass/_responsive.scss */
+  /* line 21, ../sass/partials/_responsive.scss */
   .topbar {
     display: none;
   }
 
-  /* line 25, ../sass/_responsive.scss */
+  /* line 25, ../sass/partials/_responsive.scss */
   .header__icon {
     position: relative;
     display: block;
@@ -191,7 +195,7 @@ a {
     height: 66px;
     cursor: pointer;
   }
-  /* line 34, ../sass/_responsive.scss */
+  /* line 34, ../sass/partials/_responsive.scss */
   .header__icon:after {
     content: '';
     position: absolute;
@@ -205,7 +209,7 @@ a {
     box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
   }
 
-  /* line 46, ../sass/_responsive.scss */
+  /* line 46, ../sass/partials/_responsive.scss */
   .menu {
     position: absolute;
     left: 0;
@@ -218,7 +222,7 @@ a {
     -webkit-transform: translateX(-250px);
     transform: translateX(-250px);
   }
-  /* line 56, ../sass/_responsive.scss */
+  /* line 56, ../sass/partials/_responsive.scss */
   .menu li {
     display: block !important;
     height: 40px;
@@ -227,18 +231,18 @@ a {
     border-bottom: 1px solid #373737;
   }
 
-  /* line 68, ../sass/_responsive.scss */
+  /* line 68, ../sass/partials/_responsive.scss */
   .with--sidebar .site-pusher {
     -moz-transform: translateX(250px);
     -ms-transform: translateX(250px);
     -webkit-transform: translateX(250px);
     transform: translateX(250px);
   }
-  /* line 72, ../sass/_responsive.scss */
+  /* line 72, ../sass/partials/_responsive.scss */
   .with--sidebar .site-container {
     overflow: hidden;
   }
-  /* line 76, ../sass/_responsive.scss */
+  /* line 76, ../sass/partials/_responsive.scss */
   .with--sidebar .site-cache {
     position: absolute;
     top: 0;
@@ -248,7 +252,14 @@ a {
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
-/* line 108, ../sass/style.scss */
+/* line 112, ../sass/armtheme.scss */
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
+}
+
+/* line 118, ../sass/armtheme.scss */
+.banner {
+  padding: 25px 0;
+  background-color: #ffd23f;
+  text-align: center;
 }

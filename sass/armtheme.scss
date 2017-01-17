@@ -5,7 +5,7 @@
 
 //BASE
 @import "partials/base";
-@import "buttons";
+@import "partials/buttons";
 
 html, body{
   font-family: 'Roboto', sans-serif;
@@ -42,6 +42,10 @@ a{
    height: $menu-height;
    line-height: $menu-height;
    text-align: center;
+   background: url(../img/ls.jpg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
  }
 
  .header__logo{
@@ -101,10 +105,18 @@ a{
 
 //RESPONSIVE
 
-@import "responsive";
+@import "partials/_responsive";
 
 // BODY
 
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
+}
+
+// SECTION
+
+.banner{
+  padding: 25px 0;
+  background-color: $pri;
+  text-align: center;
 }
