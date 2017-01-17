@@ -1,0 +1,50 @@
+%btn {
+  display: inline-block;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: $sec;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: normal;
+  padding: 0 24px;
+  border-radius: 2px;
+  border: 2px solid $sec;
+  cursor: pointer;
+  @include transition(background-color 0.14s ease-in-out);
+
+  // hovering on the btn
+  &:hover, &:focus {
+    color: $tri;
+    text-decoration: none;
+    outline: none;
+  } // end hover
+
+  // clicking on the button
+  &:active {
+    top: 1px; // adds a tiny hop to the click
+  } // end active
+
+} // end .button
+
+/*
+An example button.
+You can use this example if you want. Just replace all the variables
+and it will create a button dependant on those variables.
+*/
+.blue-btn {
+  @extend %btn; // here we load the btn defaults
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: darken($pri, 4%);
+  } // end hover
+
+  &:active {
+    background-color: darken($pri, 5%);
+  } // end active
+
+} // end blue button

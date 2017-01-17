@@ -16,6 +16,9 @@
         <h1>Who are you, my warranty?!</h1>
 
 
+        <a href="#" class="blue-btn">Button</a>
+        <a href="#" class="blue-btn">Button</a>
+        <a href="#" class="blue-btn">Button</a>
     <p>My fellow Earthicans, as I have explained in my book 'Earth in the Balance'', and the much more popular ''Harry
         Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards. You
         wouldn't. Ask anyway!</p>

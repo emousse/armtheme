@@ -4,16 +4,14 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 //BASE
-@import "base";
-$container-style: magic;
-// $container-width: 50em;
+@import "partials/base";
+@import "buttons";
 
 html, body{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.4;
   height: 100%;
-
   margin: 0;
   padding: 0;
 }
@@ -68,7 +66,7 @@ a{
 
 .footer__bottom{
   padding: 20px 0;
-  background-color: $pri; 
+  background-color: $pri;
 }
 
 
