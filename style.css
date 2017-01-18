@@ -22,3 +22,11 @@
   margin-right: 10px;
   border-radius: 2px;
 }
+
+.projects-item {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: #e6e5e4;
+  border: 2px solid #b6b5b4;
+}

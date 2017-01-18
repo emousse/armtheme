@@ -263,3 +263,19 @@ h1, h2, h3 {
   background-color: #ffd23f;
   text-align: center;
 }
+
+/* line 124, ../sass/armtheme.scss */
+.projects {
+  padding: 50px 0;
+  background-color: #FFFCF2;
+}
+/* line 128, ../sass/armtheme.scss */
+.projects-title ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 131, ../sass/armtheme.scss */
+.projects-title ul li {
+  padding-right: 10px;
+  display: inline-block;
+}
