@@ -37,7 +37,7 @@
             <ul class="filters-button-group">
                 <li data-filter=".parquet" >Parquets</li>
                 <li data-filter=".cuisine">Cuisine</li>
-                <li data-filter="renovation">Renovation</li>
+                <li data-filter=".renovation">Renovation</li>
             </ul>
         </div>
         <div class="project-grids">
