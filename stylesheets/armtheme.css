@@ -149,8 +149,12 @@ a {
   transition-duration: 0.2s;
 }
 /* line 97, ../sass/armtheme.scss */
-.menu ul li a:hover {
-  color: #373737;
+.menu ul li a:hover, .menu ul li a:focus {
+  color: #2d2d2d;
+}
+/* line 102, ../sass/armtheme.scss */
+.menu ul li a:active {
+  color: #2d2d2d;
 }
 
 @media only screen and (max-width: 768px) {
@@ -252,36 +256,51 @@ a {
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
-/* line 112, ../sass/armtheme.scss */
+/* line 117, ../sass/armtheme.scss */
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 118, ../sass/armtheme.scss */
+/* line 123, ../sass/armtheme.scss */
 .banner {
   padding: 25px 0;
   background-color: #ffd23f;
   text-align: center;
 }
 
-/* line 124, ../sass/armtheme.scss */
+/* line 129, ../sass/armtheme.scss */
 .projects {
   padding: 50px 0;
   background-color: #FFFCF2;
 }
-/* line 128, ../sass/armtheme.scss */
+/* line 133, ../sass/armtheme.scss */
 .projects-title ul {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
+  margin-bottom: 30px;
 }
-/* line 131, ../sass/armtheme.scss */
+/* line 137, ../sass/armtheme.scss */
 .projects-title ul li {
-  padding-right: 10px;
+  margin-right: 10px;
   display: inline-block;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
-
-/* line 140, ../sass/armtheme.scss */
+/* line 143, ../sass/armtheme.scss */
+.projects-title ul li:hover, .projects-title ul li:focus {
+  color: #ffcd2b;
+  border-color: #ffd23f;
+}
+/* line 148, ../sass/armtheme.scss */
+.projects-title ul li:active {
+  color: #ffcd2b;
+  border-color: #ffd23f;
+}
+/* line 155, ../sass/armtheme.scss */
 .projects-item {
   float: left;
   width: 100px;
@@ -291,14 +310,15 @@ h1, h2, h3 {
   border: 2px solid #b6b5b4;
 }
 
-/* line 149, ../sass/armtheme.scss */
+/* line 165, ../sass/armtheme.scss */
 .background-fixed {
   position: relative;
   padding: 60px 0;
   background: url(../img/1.jpg) fixed;
   background-size: cover;
+  text-align: center;
 }
-/* line 155, ../sass/armtheme.scss */
+/* line 172, ../sass/armtheme.scss */
 .background-fixed:after {
   position: absolute;
   content: '';
@@ -307,4 +327,18 @@ h1, h2, h3 {
   width: 100%;
   height: 100%;
   background: rgba(34, 34, 34, 0.8);
+}
+/* line 181, ../sass/armtheme.scss */
+.background-fixed-title {
+  font-family: "Montserrat", sans-serif;
+  color: #ffd23f;
+  position: relative;
+  z-index: 2;
+  padding: 20px 0;
+}
+/* line 188, ../sass/armtheme.scss */
+.background-fixed-body {
+  color: #FFFCF2;
+  position: relative;
+  z-index: 2;
 }

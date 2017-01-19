@@ -32,7 +32,8 @@ return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.document
     if(scrollY()>top && !hasScrollClass){
       element.classList.add('fixed')
       element.style.width = rect.width + "px";
-      siteContent.style.paddingTop = rect.height + "px";
+      if(rect.width>768)
+        siteContent.style.paddingTop = rect.height + "px";
     } else if (scrollY()<top && hasScrollClass){
       element.classList.remove('fixed');
       siteContent.style.paddingTop = "";

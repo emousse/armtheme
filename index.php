@@ -74,7 +74,12 @@
 
 <div class="background-fixed">
     <div class="container">
-        HELLO
+        <div class="background-fixed-title">
+            HELLO
+        </div>
+        <div class="background-fixed-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ratione, voluptas. Aliquid amet debitis excepturi expedita fuga inventore iure quibusdam repellendus sint unde. Debitis dolorum nulla sunt tempore voluptas voluptatum!
+        </div>
     </div>
 </div>
 

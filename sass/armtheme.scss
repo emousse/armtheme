@@ -94,8 +94,13 @@ a{
        padding: 0 10px;
        font-size: 1em;
        @include transition-duration(0.2s);
-       &:hover {
-         color: $sec;
+       &:hover,
+       &:focus{
+         color: darken($sec, 4%);
+       }
+
+       &:active{
+       color: darken($sec, 4%)
        }
      }
      display: inline-block; /* non-flexbox browsers */
@@ -127,23 +132,34 @@ h1, h2, h3 {
   &-title{
     ul{
       margin: 0;
-      padding: 0;
+      padding: 20px 0;
+      margin-bottom: 30px;
       li{
-        padding-right:10px;
+        margin-right:10px;
         display: inline-block;
         cursor: pointer;
+        border-bottom: 2px solid transparent;
+        @include transition-duration(0.2s);
+        &:hover,
+        &:focus{
+          color: darken($pri, 4%);
+          border-color: $pri;
+        }
+        &:active{
+          color: darken($pri, 4%);
+          border-color: $pri;
+        }
       }
     }
   }
-}
-
-.projects-item {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background:url(../img/2.jpg);
-  background-size: cover;
-  border: 2px solid #b6b5b4;
+  &-item{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background:url(../img/2.jpg);
+    background-size: cover;
+    border: 2px solid #b6b5b4;
+  }
 }
 
 .background-fixed{
@@ -152,6 +168,7 @@ h1, h2, h3 {
   background: url(../img/1.jpg)
     fixed;
   background-size: cover;
+  text-align: center;
   &:after{
     position: absolute;
     content: '';
@@ -161,5 +178,16 @@ h1, h2, h3 {
     height: 100%;
     background: rgba(34,34,34,0.8);
   }
-
+  &-title{
+    font-family: "Montserrat", sans-serif;
+    color: $pri;
+    position: relative;
+    z-index: 2;
+    padding: 20px 0;
+  }
+  &-body{
+    color: $tri;
+    position: relative;
+    z-index: 2;
+  }
 }
