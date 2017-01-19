@@ -278,13 +278,33 @@ h1, h2, h3 {
 .projects-title ul li {
   padding-right: 10px;
   display: inline-block;
+  cursor: pointer;
 }
 
-/* line 139, ../sass/armtheme.scss */
+/* line 140, ../sass/armtheme.scss */
 .projects-item {
   float: left;
-  width: 50px;
-  height: 50px;
-  background: #e6e5e4;
+  width: 100px;
+  height: 100px;
+  background: url(../img/2.jpg);
+  background-size: cover;
   border: 2px solid #b6b5b4;
+}
+
+/* line 149, ../sass/armtheme.scss */
+.background-fixed {
+  position: relative;
+  padding: 60px 0;
+  background: url(../img/1.jpg) fixed;
+  background-size: cover;
+}
+/* line 155, ../sass/armtheme.scss */
+.background-fixed:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 34, 34, 0.8);
 }
