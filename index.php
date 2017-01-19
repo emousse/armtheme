@@ -66,7 +66,7 @@
                 <h3>Renovation</h3>
             </div>
             <div class="projects-item renovation">
-                <h3>Renovation</h3>
+     +            <h3>Renovation</h3>
             </div>
         </div>
     </div>
