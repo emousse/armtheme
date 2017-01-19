@@ -277,9 +277,8 @@ h1, h2, h3 {
 .projects-title ul {
   margin: 0;
   padding: 20px 0;
-  margin-bottom: 30px;
 }
-/* line 137, ../sass/armtheme.scss */
+/* line 136, ../sass/armtheme.scss */
 .projects-title ul li {
   margin-right: 10px;
   display: inline-block;
@@ -290,17 +289,17 @@ h1, h2, h3 {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 143, ../sass/armtheme.scss */
+/* line 142, ../sass/armtheme.scss */
 .projects-title ul li:hover, .projects-title ul li:focus {
   color: #ffcd2b;
   border-color: #ffd23f;
 }
-/* line 148, ../sass/armtheme.scss */
+/* line 147, ../sass/armtheme.scss */
 .projects-title ul li:active {
   color: #ffcd2b;
   border-color: #ffd23f;
 }
-/* line 155, ../sass/armtheme.scss */
+/* line 154, ../sass/armtheme.scss */
 .projects-item {
   float: left;
   width: 100px;
@@ -310,7 +309,7 @@ h1, h2, h3 {
   border: 2px solid #b6b5b4;
 }
 
-/* line 165, ../sass/armtheme.scss */
+/* line 164, ../sass/armtheme.scss */
 .background-fixed {
   position: relative;
   padding: 60px 0;
@@ -318,7 +317,7 @@ h1, h2, h3 {
   background-size: cover;
   text-align: center;
 }
-/* line 172, ../sass/armtheme.scss */
+/* line 171, ../sass/armtheme.scss */
 .background-fixed:after {
   position: absolute;
   content: '';
@@ -328,7 +327,7 @@ h1, h2, h3 {
   height: 100%;
   background: rgba(34, 34, 34, 0.8);
 }
-/* line 181, ../sass/armtheme.scss */
+/* line 180, ../sass/armtheme.scss */
 .background-fixed-title {
   font-family: "Montserrat", sans-serif;
   color: #ffd23f;
@@ -336,7 +335,7 @@ h1, h2, h3 {
   z-index: 2;
   padding: 20px 0;
 }
-/* line 188, ../sass/armtheme.scss */
+/* line 187, ../sass/armtheme.scss */
 .background-fixed-body {
   color: #FFFCF2;
   position: relative;
