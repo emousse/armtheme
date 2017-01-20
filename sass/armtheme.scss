@@ -190,3 +190,13 @@ h1, h2, h3 {
     z-index: 2;
   }
 }
+
+// BLOG SECTION
+
+.blog-post{
+  img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}

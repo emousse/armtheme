@@ -5,19 +5,19 @@
 <div class="carousel"
      data-flickity='{ "wrapAround": true }'>
     <div class="carousel-cell">
-      <img src="<?php bloginfo('template_url')?>/img/1.jpg" alt="">
+        <img src="<?php bloginfo('template_url') ?>/img/1.jpg" alt="">
     </div>
     <div class="carousel-cell">
-      <img src="<?php bloginfo('template_url')?>/img/2.jpg" alt="">
+        <img src="<?php bloginfo('template_url') ?>/img/2.jpg" alt="">
     </div>
     <div class="carousel-cell">
-      <img src="<?php bloginfo('template_url')?>/img/3.jpg" alt="">
+        <img src="<?php bloginfo('template_url') ?>/img/3.jpg" alt="">
     </div>
     <div class="carousel-cell">
-      <img src="<?php bloginfo('template_url')?>/img/4.jpg" alt="">
+        <img src="<?php bloginfo('template_url') ?>/img/4.jpg" alt="">
     </div>
     <div class="carousel-cell">
-      <img src="<?php bloginfo('template_url')?>/img/5.jpg" alt="">
+        <img src="<?php bloginfo('template_url') ?>/img/5.jpg" alt="">
     </div>
 </div>
 
@@ -35,7 +35,7 @@
     <div class="container">
         <div class="projects-title">
             <ul class="filters-button-group">
-                <li data-filter=".parquet" >Parquets</li>
+                <li data-filter=".parquet">Parquets</li>
                 <li data-filter=".cuisine">Cuisine</li>
                 <li data-filter=".renovation">Renovation</li>
             </ul>
@@ -66,7 +66,7 @@
                 <h3>Renovation</h3>
             </div>
             <div class="projects-item renovation">
-     +            <h3>Renovation</h3>
+                + <h3>Renovation</h3>
             </div>
         </div>
     </div>
@@ -78,7 +78,9 @@
             HELLO
         </div>
         <div class="background-fixed-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ratione, voluptas. Aliquid amet debitis excepturi expedita fuga inventore iure quibusdam repellendus sint unde. Debitis dolorum nulla sunt tempore voluptas voluptatum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ratione, voluptas. Aliquid amet debitis
+            excepturi expedita fuga inventore iure quibusdam repellendus sint unde. Debitis dolorum nulla sunt tempore
+            voluptas voluptatum!
         </div>
     </div>
 </div>
@@ -86,41 +88,23 @@
 <div class="container">
     <h1>Who are you, my warranty?!</h1>
 
-    <?php if ( have_posts() ) : ?>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="blog-content">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <div class="blog-post" id="blog-post-<?php the_ID() ?>">
+                        <?php the_post_thumbnail('custom-size'); ?>
 
-        <?php if ( is_home() && ! is_front_page() ) : ?>
-            <header>
-                <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-            </header>
-        <?php endif; ?>
+                        <h2>
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </h2>
+                    </div>
+                <?php endwhile; ?>
 
-        <?php
-        // Start the loop.
-        while ( have_posts() ) : the_post();
-
-            /*
-             * Include the Post-Format-specific template for the content.
-             * If you want to override this in a child theme, then include a file
-             * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-             */
-            get_template_part( 'template-parts/content', get_post_format() );
-
-            // End the loop.
-        endwhile;
-
-        // Previous/next page navigation.
-        the_posts_pagination( array(
-            'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-            'next_text'          => __( 'Next page', 'twentysixteen' ),
-            'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
-        ) );
-
-    // If no content, include the "No posts found" template.
-    else :
-        get_template_part( 'template-parts/content', 'none' );
-
-    endif;
-    ?>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
 
     <a href="#" class="blue-btn">Button</a>
     <a href="#" class="blue-btn">Button</a>

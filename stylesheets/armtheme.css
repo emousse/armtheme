@@ -341,3 +341,10 @@ h1, h2, h3 {
   position: relative;
   z-index: 2;
 }
+
+/* line 197, ../sass/armtheme.scss */
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
