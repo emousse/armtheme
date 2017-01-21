@@ -98,6 +98,10 @@
                         <h2>
                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         </h2>
+                        <span class="blog-post-time"><?php the_date(); ?></span>
+                        <div class="blog-post-body">
+                            <?php the_excerpt(); ?>
+                        </div>
                     </div>
                 <?php endwhile; ?>
 
