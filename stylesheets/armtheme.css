@@ -356,9 +356,42 @@ h1, h2, h3 {
 .blog-post h2 {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
 }
-/* line 208, ../sass/armtheme.scss */
+/* line 209, ../sass/armtheme.scss */
+.blog-post h2 a {
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 211, ../sass/armtheme.scss */
+.blog-post h2 a:hover, .blog-post h2 a:focus {
+  color: #ffd23f;
+}
+/* line 217, ../sass/armtheme.scss */
 .blog-post-time {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+}
+/* line 222, ../sass/armtheme.scss */
+.blog-post-more {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  height: 100%;
+  text-align: right;
+}
+/* line 228, ../sass/armtheme.scss */
+.blog-post-more a {
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 230, ../sass/armtheme.scss */
+.blog-post-more a:hover, .blog-post-more a:focus {
+  color: #ffd23f;
 }

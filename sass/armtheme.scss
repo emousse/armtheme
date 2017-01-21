@@ -204,10 +204,34 @@ h1, h2, h3 {
     h2{
       margin: 0;
       padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: $big;
+      a{
+        @include transition-duration(0.2s);
+        &:hover,
+        &:focus{
+          color: $pri;
+        }
+      }
     }
     &-time{
       text-transform: uppercase;
       font-family: 'Montserrat', sans-serif;
+      font-size: $small;
+    }
+    &-more{
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      font-size:$normal;
+      height:100%;
+      text-align: right;
+      a{
+        @include transition-duration(0.2s);
+        &:hover,
+        &:focus{
+          color: $pri;
+        }
+      }
     }
   }
 }

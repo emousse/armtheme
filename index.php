@@ -4,21 +4,12 @@
 <!-- Flickity HTML init -->
 <div class="carousel"
      data-flickity='{ "wrapAround": true }'>
-    <div class="carousel-cell">
-        <img src="<?php bloginfo('template_url') ?>/img/1.jpg" alt="">
-    </div>
-    <div class="carousel-cell">
-        <img src="<?php bloginfo('template_url') ?>/img/2.jpg" alt="">
-    </div>
-    <div class="carousel-cell">
-        <img src="<?php bloginfo('template_url') ?>/img/3.jpg" alt="">
-    </div>
-    <div class="carousel-cell">
-        <img src="<?php bloginfo('template_url') ?>/img/4.jpg" alt="">
-    </div>
-    <div class="carousel-cell">
-        <img src="<?php bloginfo('template_url') ?>/img/5.jpg" alt="">
-    </div>
+        <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/1.jpg" alt="">
+        <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/2.jpg" alt="">
+        <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/3.jpg" alt="">
+        <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/4.jpg" alt="">
+        <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/5.jpg" alt="">
+
 </div>
 
 <section class="banner">
@@ -101,6 +92,9 @@
                         <span class="blog-post-time"><?php the_date(); ?></span>
                         <div class="blog-post-body">
                             <?php the_excerpt(); ?>
+                        </div>
+                        <div class="blog-post-more">
+                            <a href="<?php the_permalink(); ?>">Lire la suite</a>
                         </div>
                     </div>
                 <?php endwhile; ?>
