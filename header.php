@@ -26,7 +26,7 @@
         <header class="header">
           <!-- logo -->
           <a href="#" class="header__icon" id="header__icon"></a>
-          <a href="#" class="header__logo"><?php bloginfo('name') ?></a>
+          <a href="<?php bloginfo('url'); ?>" class="header__logo"><?php bloginfo('name') ?></a>
           <!-- /logo -->
 
           <!-- nav -->

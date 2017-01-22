@@ -4,12 +4,20 @@
 <!-- Flickity HTML init -->
 <div class="carousel"
      data-flickity='{ "cellAlign": "left", "contain": true }'>
-        <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/1.jpg" alt="">
-        <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/2.jpg" alt="">
-        <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/3.jpg" alt="">
-        <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/4.jpg" alt="">
-        <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/5.jpg" alt="">
-
+        <div class="carousel-cell" style="background-image: url('<?php bloginfo('template_url'); ?>/img/1.jpg')">
+            <div class="carousel-content container">
+                <div class="col-md-6"><div class="carousel-title">
+                    <h2>HELLO</h2>
+                </div>
+                <div class="carousel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div></div>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background-image: url('<?php bloginfo('template_url'); ?>/img/2.jpg')"></div>
+        <div class="carousel-cell" style="background-image: url('<?php bloginfo('template_url'); ?>/img/3.jpg')"></div>
+        <div class="carousel-cell" style="background-image: url('<?php bloginfo('template_url'); ?>/img/4.jpg')"></div>
+        <div class="carousel-cell" style="background-image: url('<?php bloginfo('template_url'); ?>/img/5.jpg')"></div>
 </div>
 
 <section class="banner">

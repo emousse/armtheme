@@ -39,7 +39,6 @@ a{
 
  .header{
    height: $menu-height;
-
    line-height: $menu-height;
    color: #FFF;
    background-color: $pri;
@@ -57,6 +56,8 @@ a{
  }
 
  .header__logo{
+   font-family: 'Roboto',sans-serif;
+   font-size: $medium;
    font-weight: bold;
    padding: 0 25px;
    float: left;
@@ -124,6 +125,26 @@ a{
 
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
+}
+
+// SLIDER
+
+.carousel{
+  &-content{
+    text-align: center;
+    color: $tri;
+    padding: 20px;
+  }
+  &-title{
+    background: rgba(34,34,34,0.8);
+    h2{
+      margin: 0;
+      border-bottom: 1px solid $pri;
+    }
+  }
+  &-body{
+    background: rgba(34,34,34,0.5);
+  }
 }
 
 // SECTION
