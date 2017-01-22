@@ -5,7 +5,7 @@
         <div class="col-md-8">
             <div class="blog-content">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <div class="blog-post" id="blog-post-<?php the_ID() ?>">
+                    <article class="blog-post" id="blog-post-<?php the_ID() ?>">
                         <?php the_post_thumbnail('custom-size'); ?>
 
                         <h2>
@@ -13,9 +13,11 @@
                         </h2>
                         <span class="blog-post-time"><?php the_date(); ?></span>
                         <div class="blog-post-body">
-                            <?php get_the_content(); ?>
+                            <?php
+                                the_content();
+                            ?>
                         </div>
-                    </div>
+                    </article>
                 <?php endwhile; ?>
 
                 <?php endif; ?>

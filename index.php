@@ -83,7 +83,7 @@
         <div class="col-md-8">
             <div class="blog-content">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <div class="blog-post" id="blog-post-<?php the_ID() ?>">
+                    <article class="blog-post" id="blog-post-<?php the_ID() ?>">
                         <?php the_post_thumbnail('custom-size'); ?>
 
                         <h2>
@@ -96,7 +96,7 @@
                         <div class="blog-post-more">
                             <a href="<?php the_permalink(); ?>">Lire la suite</a>
                         </div>
-                    </div>
+                    </article>
                 <?php endwhile; ?>
 
                 <?php endif; ?>

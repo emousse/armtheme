@@ -16,6 +16,14 @@ html, body{
   padding: 0;
 }
 
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
 .container{
 }
 
@@ -194,6 +202,9 @@ h1, h2, h3 {
 // BLOG SECTION
 
 .blog{
+  &-content{
+    padding: 50px 0 25px;
+  }
   &-post{
     margin-bottom: 40px;
     img{
@@ -213,6 +224,12 @@ h1, h2, h3 {
           color: $pri;
         }
       }
+    }
+    &-body{
+      pre{
+        font-family: inherit;
+      }
+      text-align: justify;
     }
     &-time{
       text-transform: uppercase;
