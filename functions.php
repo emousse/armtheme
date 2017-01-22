@@ -6,7 +6,7 @@ function load_arm_css()
     wp_register_style('armtheme', get_template_directory_uri() . '/stylesheets/armtheme.css', array(), time(), 'all');
     wp_enqueue_style('armtheme'); // Enqueue it!
 
-    wp_register_style('style', get_template_directory_uri() . './style.css', array(), '1.0', 'all');
+    wp_register_style('style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('style'); // Enqueue it!
 
     wp_register_style('flickity', get_template_directory_uri() . '/stylesheets/flickity.min.css', array(), '1.0', 'all');

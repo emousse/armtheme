@@ -74,7 +74,7 @@ a {
   line-height: 66px;
   color: #FFF;
   background-color: #ffd23f;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* line 41, ../sass/armtheme.scss */
@@ -332,14 +332,14 @@ h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
   color: #ffd23f;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   padding: 20px 0;
 }
 /* line 187, ../sass/armtheme.scss */
 .background-fixed-body {
   color: #FFFCF2;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* line 197, ../sass/armtheme.scss */

@@ -35,7 +35,7 @@ a{
    line-height: $menu-height;
    color: #FFF;
    background-color: $pri;
-   z-index: 1;
+   z-index: 2;
  }
 
  .topbar{
@@ -181,13 +181,13 @@ h1, h2, h3 {
     font-family: "Montserrat", sans-serif;
     color: $pri;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     padding: 20px 0;
   }
   &-body{
     color: $tri;
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
 }
 

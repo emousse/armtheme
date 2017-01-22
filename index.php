@@ -3,7 +3,7 @@
 
 <!-- Flickity HTML init -->
 <div class="carousel"
-     data-flickity='{ "wrapAround": true }'>
+     data-flickity='{ "cellAlign": "left", "contain": true }'>
         <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/1.jpg" alt="">
         <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/2.jpg" alt="">
         <img class="carousel-cell" src="<?php bloginfo('template_url') ?>/img/3.jpg" alt="">
