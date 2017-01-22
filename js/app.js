@@ -9,6 +9,10 @@ jQuery( document ).ready( function( $ ) {
     $('body').removeClass('with--sidebar');
   });
 
+  $('#up').click(function(e){
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  })
+
   //"quantité" de scroll vertical
   function scrollY(){
     var supportPageOffset = window.pageXOffset !== undefined;

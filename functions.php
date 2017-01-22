@@ -37,6 +37,12 @@ function load_arm_js()
         '1.0',
         true
     );
+    wp_enqueue_script(
+        'smoothscroll',
+        get_template_directory_uri() . '/js/smoothscroll.js',
+        '1.0',
+        true
+    );
 }
 
 //load menu
