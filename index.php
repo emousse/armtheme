@@ -6,7 +6,7 @@
      data-flickity='{ "cellAlign": "left", "contain": true }'>
         <div class="carousel-cell" style="background-image: url('<?php bloginfo('template_url'); ?>/img/1.jpg')">
             <div class="carousel-content container">
-                <div class="col-md-6"><div class="carousel-title">
+                <div class="col-md-12"><div class="carousel-title">
                     <h2>HELLO</h2>
                 </div>
                 <div class="carousel-body">
@@ -110,6 +110,9 @@
                 <?php endif; ?>
             </div>
         </div>
+        <div class="col-md-4">
+            <?php get_sidebar(); ?>
+        </div>
     </div>
 
     <a href="#" class="blue-btn">Button</a>
@@ -179,10 +182,6 @@
     <p>Hey, guess what you're accessories to. We'll go deliver this crate like professionals, and then we'll go home.
         Why yes! Thanks for noticing. Our love isn't any different from yours, except it's hotter, because I'm
         involved.</p>
-
-    <div id="up" style="width: 50px; height: 50px; background-color: #00A8EF;">
-
-    </div>
 
 </div>
 

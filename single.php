@@ -23,9 +23,12 @@
                 <?php endif; ?>
             </div>
         </div>
+        <div class="col-md-4">
+            <?php get_sidebar(); ?>
+        </div>
     </div>
 </div>
 
-<?php get_sidebar(); ?>
+
 
 <?php get_footer(); ?>

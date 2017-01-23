@@ -45,6 +45,28 @@ function load_arm_js()
     );
 }
 
+//add sidebar
+function armtheme_widgets_init() {
+    register_sidebar( array(
+        'name'          => 'Sidebar footer',
+        'id'            => 'sidebar-1',
+        'description'   => 'Sidebar qui apparait dans le footer',
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+    register_sidebar( array(
+        'name'          => 'Sidebar latérale',
+        'id'            => 'sidebar-2',
+        'description'   => 'Sidebar qui apparait dans la barre latérale',
+        'before_widget' => '<li class="%2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h2 class="aside-widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+
 //load menu
 function arm_nav()
 {
@@ -77,4 +99,5 @@ add_image_size('custom-size', 800, 400, true);
 //add action
 add_action('wp_enqueue_scripts', 'load_arm_css');
 add_action('wp_enqueue_scripts', 'load_arm_js');
+add_action('widgets_init','armtheme_widgets_init' );
 ?>
