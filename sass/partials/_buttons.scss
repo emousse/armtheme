@@ -10,7 +10,7 @@
   line-height: 34px;
   font-weight: normal;
   padding: 0 24px;
-  border-radius: 2px;
+  @include border-radius(2px);
   border: 2px solid $sec;
   cursor: pointer;
   @include transition(background-color 0.14s ease-in-out);
