@@ -6,26 +6,28 @@
 get_header();
 
 ?>
-<div class="template-subheader container">
-    <h1><?php the_title(); ?></h1>
+<div class="container-fluid template-subheader">
+    <div class="template-subheader-content container">
+        <h1><?php the_title(); ?></h1>
 
-    <div class="template-subheader-ariane">
-        <?php
-        if (function_exists('fil_ariane'))
-            echo fil_ariane();
-        ?>
+        <div class="template-subheader-ariane">
+            <?php
+            if (function_exists('fil_ariane'))
+                echo fil_ariane();
+            ?>
+        </div>
     </div>
 </div>
 
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <div class="template-menu-prestations">
+            <div class="template-prestations-menu">
                 <!-- Récupérer le menu des préstations. -->
 
                 <?php wp_list_pages(array(
                     'child_of' => 4,
-                    'title_li'  => '<h2>Préstations</h2>'
+                    'title_li'  => ''
                 ));
                 ?>
             </div>
@@ -39,7 +41,12 @@ get_header();
                     $gallery = get_post_gallery( get_the_ID(), false ); ?>
 
                     <!-- Flickity HTML init -->
-                    <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                    <div class="carousel" data-flickity='{
+                        "cellAlign": "left",
+                        "contain": true ,
+                        "pageDots": "false",
+                        "prevNextButtons": false
+                        }'>
 
                     <?php foreach( $gallery['src'] as $src ) : ?>
                         <div class="carousel-cell" style="background-image: url('<?php echo $src ?>')">
@@ -49,7 +56,7 @@ get_header();
                     </div>
                 <?php endif;
                 ?>
-                <div>
+                <div class="template-prestations-content">
                     <?php
                     echo $content;
                     ?>

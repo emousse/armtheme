@@ -516,18 +516,63 @@ h1, h2, h3 {
 
 /* line 327, ../sass/armtheme.scss */
 .template-subheader {
+  background-image: url("../img/2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+/* line 332, ../sass/armtheme.scss */
+.template-subheader-content {
   padding: 50px 0;
 }
-/* line 329, ../sass/armtheme.scss */
+/* line 334, ../sass/armtheme.scss */
+.template-subheader-content h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+/* line 338, ../sass/armtheme.scss */
 .template-subheader-ariane {
   float: right;
+  color: #FFFCF2;
 }
 
-/* line 338, ../sass/armtheme.scss */
-.template-menu-prestations ul, .template-menu-prestations li {
+/* line 347, ../sass/armtheme.scss */
+.template-prestations-menu {
+  margin: 0 0 30px 0;
+}
+/* line 349, ../sass/armtheme.scss */
+.template-prestations-menu ul, .template-prestations-menu li {
   list-style-type: none;
 }
-/* line 341, ../sass/armtheme.scss */
-.template-menu-prestations h2 {
-  margin: 0;
+/* line 353, ../sass/armtheme.scss */
+.template-prestations-menu .page_item a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  display: block;
+  border-bottom: 1px solid #515151;
+  padding: 15px 10px 15px 0;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 360, ../sass/armtheme.scss */
+.template-prestations-menu .page_item a:hover, .template-prestations-menu .page_item a:focus {
+  background-color: #ffd23f;
+}
+/* line 364, ../sass/armtheme.scss */
+.template-prestations-menu .page_item a:after {
+  content: '>';
+  float: right;
+}
+/* line 370, ../sass/armtheme.scss */
+.template-prestations-menu .current_page_item {
+  background-color: #ffd23f;
+}
+/* line 375, ../sass/armtheme.scss */
+.template-prestations-content h1, .template-prestations-content h2, .template-prestations-content h3, .template-prestations-content h4 {
+  margin: 0 0 20px 0;
+}
+/* line 378, ../sass/armtheme.scss */
+.template-prestations-content p {
+  margin: 0 0 15px 0;
 }
