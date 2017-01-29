@@ -43,6 +43,18 @@ function load_arm_js()
         '1.0',
         true
     );
+    wp_enqueue_script(
+        'velocity',
+        get_template_directory_uri() . '/js/velocity.min.js',
+        '1.0',
+        true
+    );
+    wp_enqueue_script(
+        'velocityUi',
+        get_template_directory_uri() . '/js/velocity.ui.min.js',
+        '1.0',
+        true
+    );
 }
 
 //add sidebar
@@ -65,6 +77,44 @@ function armtheme_widgets_init() {
         'before_title'  => '<h2 class="aside-widget-title">',
         'after_title'   => '</h2>',
     ) );
+}
+
+//remove gallery from content
+function strip_shortcode_gallery( $content ) {
+    preg_match_all( '/' . get_shortcode_regex() . '/s', $content, $matches, PREG_SET_ORDER );
+
+    if ( ! empty( $matches ) ) {
+        foreach ( $matches as $shortcode ) {
+            if ( 'gallery' === $shortcode[2] ) {
+                $pos = strpos( $content, $shortcode[0] );
+                if( false !== $pos ) {
+                    return substr_replace( $content, '', $pos, strlen( $shortcode[0] ) );
+                }
+            }
+        }
+    }
+
+    return $content;
+}
+
+//fil d'ariane
+function fil_ariane(){
+    global $post;
+    if(!is_home()){
+        $fil = 'Vous êtes ici : ';
+        $fil.= "<a href='".get_bloginfo('url')."'>";
+        $fil.= get_bloginfo('name');
+        $fil.= '</a> > ';
+
+        $parents = array_reverse(get_ancestors($post->ID, 'page'));
+        foreach($parents as $parent){
+            $fil.= '<a href="'.get_permalink($parent).'">';
+            $fil.= get_the_title($parent);
+            $fil.= '</a> > ';
+        }
+        $fil.= $post->post_title;
+    }
+    return $fil;
 }
 
 //load menu

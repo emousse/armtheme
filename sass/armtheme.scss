@@ -165,6 +165,7 @@ h1, h2, h3 {
 
 .carousel{
   &-content{
+    display: none;
     text-align: center;
     color: $tri;
     padding: 20px;
@@ -319,5 +320,25 @@ h1, h2, h3 {
         }
       }
     }
+  }
+}
+
+// TEMPLATE
+.template-subheader{
+  padding: 50px 0;
+  &-ariane{
+    float: right;
+  }
+}
+
+
+// PRESTATIONS TEMPLATE
+
+.template-menu-prestations{
+  ul,li{
+    list-style-type: none;
+  }
+  h2{
+    margin: 0;
   }
 }

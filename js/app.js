@@ -16,9 +16,9 @@ jQuery( document ).ready( function( $ ) {
   //"quantité" de scroll vertical
   function scrollY(){
     var supportPageOffset = window.pageXOffset !== undefined;
-var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+    var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
 
-return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+    return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
   }
 
   var element  = document.querySelector('.header');
@@ -57,7 +57,13 @@ return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.document
 
   window.addEventListener('resize', onResize);
 
-
+  //event for flickity
+  var $carousel = $('.carousel').flickity();
+  var flkty = $carousel.data('flickity');
+  $carousel.on( 'settle.flickity', function() {
+    //index of current slide flkty.selectedIndex
+    $(".carousel-content").velocity("transition.flipBounceXIn");
+  });
   //init isotope
   var $grid = $('.project-grids').isotope({
     itemSelector: '.projects-item',
