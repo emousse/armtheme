@@ -31,8 +31,8 @@
 
           <!-- nav -->
           <nav class="menu" role="navigation">
-  						<?php arm_nav(); ?>
-  				</nav>
+            <?php arm_nav(); ?>
+          </nav>
           <!-- /nav -->
 
         </header>

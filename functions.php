@@ -58,37 +58,39 @@ function load_arm_js()
 }
 
 //add sidebar
-function armtheme_widgets_init() {
-    register_sidebar( array(
-        'name'          => 'Sidebar footer',
-        'id'            => 'sidebar-1',
-        'description'   => 'Sidebar qui apparait dans le footer',
+function armtheme_widgets_init()
+{
+    register_sidebar(array(
+        'name' => 'Sidebar footer',
+        'id' => 'sidebar-1',
+        'description' => 'Sidebar qui apparait dans le footer',
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</li>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ) );
-    register_sidebar( array(
-        'name'          => 'Sidebar latérale',
-        'id'            => 'sidebar-2',
-        'description'   => 'Sidebar qui apparait dans la barre latérale',
+        'after_widget' => '</li>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+    register_sidebar(array(
+        'name' => 'Sidebar latérale',
+        'id' => 'sidebar-2',
+        'description' => 'Sidebar qui apparait dans la barre latérale',
         'before_widget' => '<li class="%2$s">',
-        'after_widget'  => '</li>',
-        'before_title'  => '<h2 class="aside-widget-title">',
-        'after_title'   => '</h2>',
-    ) );
+        'after_widget' => '</li>',
+        'before_title' => '<h2 class="aside-widget-title">',
+        'after_title' => '</h2>',
+    ));
 }
 
 //remove gallery from content
-function strip_shortcode_gallery( $content ) {
-    preg_match_all( '/' . get_shortcode_regex() . '/s', $content, $matches, PREG_SET_ORDER );
+function strip_shortcode_gallery($content)
+{
+    preg_match_all('/' . get_shortcode_regex() . '/s', $content, $matches, PREG_SET_ORDER);
 
-    if ( ! empty( $matches ) ) {
-        foreach ( $matches as $shortcode ) {
-            if ( 'gallery' === $shortcode[2] ) {
-                $pos = strpos( $content, $shortcode[0] );
-                if( false !== $pos ) {
-                    return substr_replace( $content, '', $pos, strlen( $shortcode[0] ) );
+    if (!empty($matches)) {
+        foreach ($matches as $shortcode) {
+            if ('gallery' === $shortcode[2]) {
+                $pos = strpos($content, $shortcode[0]);
+                if (false !== $pos) {
+                    return substr_replace($content, '', $pos, strlen($shortcode[0]));
                 }
             }
         }
@@ -98,22 +100,22 @@ function strip_shortcode_gallery( $content ) {
 }
 
 //fil d'ariane
-function fil_ariane(){
+function fil_ariane()
+{
     global $post;
-    if(!is_home()){
-        $fil = 'Vous êtes ici : ';
-        $fil.= "<a href='".get_bloginfo('url')."'>";
-        $fil.= get_bloginfo('name');
-        $fil.= '</a> > ';
+    $fil = 'Vous êtes ici : ';
+    $fil .= "<a href='" . get_bloginfo('url') . "'>";
+    $fil .= get_bloginfo('name');
+    $fil .= '</a> > ';
 
-        $parents = array_reverse(get_ancestors($post->ID, 'page'));
-        foreach($parents as $parent){
-            $fil.= '<a href="'.get_permalink($parent).'">';
-            $fil.= get_the_title($parent);
-            $fil.= '</a> > ';
-        }
-        $fil.= $post->post_title;
+    $parents = array_reverse(get_ancestors($post->ID, 'page'));
+    foreach ($parents as $parent) {
+        $fil .= '<a href="' . get_permalink($parent) . '">';
+        $fil .= get_the_title($parent);
+        $fil .= '</a> > ';
     }
+    $fil .= $post->post_title;
+
     return $fil;
 }
 
@@ -149,5 +151,5 @@ add_image_size('custom-size', 800, 400, true);
 //add action
 add_action('wp_enqueue_scripts', 'load_arm_css');
 add_action('wp_enqueue_scripts', 'load_arm_js');
-add_action('widgets_init','armtheme_widgets_init' );
+add_action('widgets_init', 'armtheme_widgets_init');
 ?>

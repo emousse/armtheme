@@ -6,14 +6,14 @@
 get_header();
 
 ?>
-<div class="template-subheader">
+<section class="template-subheader">
     <?php
 
     if (function_exists('fil_ariane'))
         echo fil_ariane();
 
     ?>
-</div>
+</section>
 
 <div class="background-fixed">
     <div class="container">

@@ -57,12 +57,12 @@ jQuery( document ).ready( function( $ ) {
 
   window.addEventListener('resize', onResize);
 
-  //event for flickity
+  //event for flickity  and velocity effect on carousel content
+  $('.carousel-content, .carousel-title, .carousel-body').velocity('transition.slideUpIn', { stagger: 250 });
   var $carousel = $('.carousel').flickity();
   var flkty = $carousel.data('flickity');
   $carousel.on( 'settle.flickity', function() {
     //index of current slide flkty.selectedIndex
-    $(".carousel-content").velocity("transition.flipBounceXIn");
   });
   //init isotope
   var $grid = $('.project-grids').isotope({

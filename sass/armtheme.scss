@@ -2,12 +2,11 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 //BASE
 @import "partials/base";
 @import "partials/buttons";
 
-html, body{
+html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.4;
@@ -17,54 +16,54 @@ html, body{
 }
 
 pre {
-  white-space: pre-wrap;       /* css-3 */
-  white-space: -moz-pre-wrap;  /* Mozilla */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
-.container{
+.container {
 }
 
 .site-content {
 }
 
-a{
- text-decoration: none;
- color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 // HEADER
 
- .header{
-   height: $menu-height;
-   line-height: $menu-height;
-   color: #FFF;
-   background-color: $pri;
-   z-index: 2;
- }
+.header {
+  height: $menu-height;
+  line-height: $menu-height;
+  color: #FFF;
+  background-color: $pri;
+  z-index: 2;
+}
 
- .topbar{
-   height: $menu-height;
-   line-height: $menu-height;
-   text-align: center;
-   background: url(../img/ls.jpg);
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: center;
- }
+.topbar {
+  height: $menu-height;
+  line-height: $menu-height;
+  text-align: center;
+  background: url(../img/ls.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
- .header__logo{
-   font-family: 'Roboto',sans-serif;
-   font-size: $medium;
-   font-weight: bold;
-   padding: 0 25px;
-   float: left;
- }
+.header__logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: $medium;
+  font-weight: bold;
+  padding: 0 25px;
+  float: left;
+}
 
- //FOOTER
-.up{
+//FOOTER
+.up {
   line-height: 50px;
   text-align: center;
   font-weight: bold;
@@ -83,71 +82,71 @@ a{
   @include transform(translateY(60px));
 }
 
-.up--show{
-    @include transform(translateY(0px));
+.up--show {
+  @include transform(translateY(0px));
 }
 
-.footer{
+.footer {
   height: $footer-height;
   line-height: $footer-height;
   text-align: center;
   background-color: $sec;
 }
 
-.footer__top{
+.footer__top {
   padding: 70px 0;
   color: white;
   background-color: $sec;
 }
 
-.footer__bottom{
+.footer__bottom {
   padding: 20px 0;
   background-color: $pri;
 }
 
-.widget{
+.widget {
   list-style-type: none;
-  &-position{
-    padding:0;
+  &-position {
+    padding: 0;
     margin: 0;
   }
-  &-title{
+  &-title {
     text-transform: uppercase;
     margin-bottom: 10px;
   }
 }
 
- // MENU
+// MENU
 
- .fixed{
-   position: fixed;
-   top: 0;
- }
+.fixed {
+  position: fixed;
+  top: 0;
+}
 
-.menu{
+.menu {
   float: left;
-  ul{
+  ul {
     margin: 0;
     padding: 0;
-   li {
-     a{
-       display: block;
-       text-transform: uppercase;
-       font-family: 'Montserrat', sans-serif;
-       padding: 0 10px;
-       font-size: 1em;
-       @include transition-duration(0.2s);
-       &:hover,
-       &:focus{
-         color: darken($sec, 4%);
-       }
+    li {
+      a {
+        display: block;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0 10px;
+        font-size: 1em;
+        @include transition-duration(0.2s);
+        &:hover,
+        &:focus {
+          color: darken($sec, 4%);
+        }
 
-       &:active{
-       color: darken($sec, 4%)
-       }
-     }
-     display: inline-block; /* non-flexbox browsers */
-   }
+        &:active {
+          color: darken($sec, 4%)
+        }
+      }
+      display: inline-block; /* non-flexbox browsers */
+    }
   }
 }
 
@@ -163,92 +162,91 @@ h1, h2, h3 {
 
 // SLIDER
 
-.carousel{
-  &-content{
+.carousel {
+  &-content {
     display: none;
     text-align: center;
     color: $tri;
     padding: 20px;
   }
-  &-title{
-    background: rgba(34,34,34,0.8);
-    h2{
+  &-title {
+    background: rgba(34, 34, 34, 0.8);
+    h2 {
       margin: 0;
       border-bottom: 1px solid $pri;
     }
   }
-  &-body{
-    background: rgba(34,34,34,0.5);
+  &-body {
+    background: rgba(34, 34, 34, 0.5);
   }
 }
 
 // SECTION
 
-.banner{
+.banner {
   padding: 25px 0;
   background-color: $pri;
   text-align: center;
 }
 
-.projects{
+.projects {
   padding: 50px 0;
   background-color: $tri;
-  &-title{
-    ul{
+  &-title {
+    ul {
       margin: 0;
       padding: 20px 0;
-      li{
-        margin-right:10px;
+      li {
+        margin-right: 10px;
         display: inline-block;
         cursor: pointer;
         border-bottom: 2px solid transparent;
         @include transition-duration(0.2s);
         &:hover,
-        &:focus{
+        &:focus {
           color: darken($pri, 4%);
           border-color: $pri;
         }
-        &:active{
+        &:active {
           color: darken($pri, 4%);
           border-color: $pri;
         }
       }
     }
   }
-  &-item{
+  &-item {
     float: left;
     width: 100px;
     height: 100px;
-    background:url(../img/2.jpg);
+    background: url(../img/2.jpg);
     background-size: cover;
     border: 2px solid #b6b5b4;
   }
 }
 
-.background-fixed{
+.background-fixed {
   position: relative;
   padding: 60px 0;
-  background: url(../img/1.jpg)
-    fixed;
+  background: url(../img/1.jpg) fixed;
   background-size: cover;
   text-align: center;
-  &:after{
+  &:after {
     position: absolute;
     content: '';
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(34,34,34,0.8);
+    background: rgba(34, 34, 34, 0.8);
   }
-  &-title{
+  &-title {
     font-family: "Montserrat", sans-serif;
     color: $pri;
     position: relative;
     z-index: 1;
     padding: 20px 0;
   }
-  &-body{
+  &-body {
     color: $tri;
     position: relative;
     z-index: 1;
@@ -256,66 +254,66 @@ h1, h2, h3 {
 }
 
 // SIDEBAR
-.sidebar{
+.sidebar {
   text-align: right;
   padding: 50px 0;
-  h2{
-    margin:0px;
+  h2 {
+    margin: 0px;
     margin-bottom: 25px;
     text-transform: uppercase;
   }
-  ul{
+  ul {
     list-style-type: none;
   }
 }
 
 // BLOG SECTION
 
-.blog{
-  &-content{
+.blog {
+  &-content {
     padding: 50px 0 25px;
   }
-  &-post{
+  &-post {
     margin-bottom: 40px;
-    img{
+    img {
       max-width: 100%;
       height: auto;
       margin-bottom: 30px;
     }
-    h2{
+    h2 {
       margin: 0;
       padding: 0;
       font-family: 'Montserrat', sans-serif;
       font-size: $big;
-      a{
+      a {
         @include transition-duration(0.2s);
         &:hover,
-        &:focus{
+        &:focus {
           color: $pri;
         }
       }
     }
-    &-body{
-      pre{
+    &-body {
+      pre {
         font-family: inherit;
       }
       text-align: justify;
     }
-    &-time{
+    &-time {
       text-transform: uppercase;
       font-family: 'Montserrat', sans-serif;
       font-size: $small;
     }
-    &-more{
+    &-more {
       font-family: 'Montserrat', sans-serif;
       text-transform: uppercase;
-      font-size:$normal;
-      height:100%;
+      font-size: $normal;
+      height: 100%;
       text-align: right;
-      a{
+      a {
         @include transition-duration(0.2s);
         &:hover,
-        &:focus{
+        &:focus {
           color: $pri;
         }
       }
@@ -324,18 +322,18 @@ h1, h2, h3 {
 }
 
 // TEMPLATE
-.template-subheader{
+.template-subheader {
   background-image: url("../img/2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 30px;
-  &-content{
+  &-content {
     padding: 50px 0;
-    h1{
+    h1 {
       font-family: 'Montserrat', sans-serif;
     }
   }
-  &-ariane{
+  &-ariane {
     float: right;
     color: $tri;
   }
@@ -343,41 +341,51 @@ h1, h2, h3 {
 
 // PRESTATIONS TEMPLATE
 
-.template-prestations{
-  &-menu{
+.template-prestations {
+  padding: 50px 0 25px;
+  &-menu {
     margin: 0 0 30px 0;
-    ul,li{
+    ul, li {
       list-style-type: none;
     }
-    .page_item{
-      a{
+    .page_item {
+      a {
         font-family: 'Montserrat', sans-serif;
         font-size: $small;
         display: block;
-        border-bottom: 1px solid lighten($sec,10);
+        border-bottom: 1px solid lighten($sec, 10);
         padding: 15px 10px 15px 0;
         @include transition-duration(0.2s);
         &:hover,
-        &:focus{
+        &:focus {
           background-color: $pri;
         }
-        &:after{
+        &:after {
           content: '>';
           float: right;
         }
       }
     }
-    .current_page_item{
+    .current_page_item {
       background-color: $pri;
     }
   }
-  &-content{
-    h1, h2, h3, h4{
+  &-content {
+    h1, h2, h3, h4 {
       margin: 0 0 20px 0;
     }
-    p{
+    p {
       margin: 0 0 15px 0;
     }
+  }
+}
 
+// ARM TEMPLATE
+
+.template-arm-apropos {
+  padding: 50px 0 25px;
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }

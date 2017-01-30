@@ -6,7 +6,7 @@
 get_header();
 
 ?>
-<div class="container-fluid template-subheader">
+<section class="container-fluid template-subheader">
     <div class="template-subheader-content container">
         <h1><?php the_title(); ?></h1>
 
@@ -17,17 +17,17 @@ get_header();
             ?>
         </div>
     </div>
-</div>
+</section>
 
 <div class="container">
-    <div class="row">
+    <div class="row template-prestations">
         <div class="col-md-3">
             <div class="template-prestations-menu">
                 <!-- Récupérer le menu des préstations. -->
 
                 <?php wp_list_pages(array(
                     'child_of' => 4,
-                    'title_li'  => ''
+                    'title_li' => ''
                 ));
                 ?>
             </div>
@@ -35,10 +35,10 @@ get_header();
         <div class="col-md-9">
 
             <?php if (have_posts()) : while (have_posts()) : the_post();
-                $content = strip_shortcode_gallery( get_the_content() );
-                $content = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $content ) );
-                if ( get_post_gallery() ) :
-                    $gallery = get_post_gallery( get_the_ID(), false ); ?>
+                $content = strip_shortcode_gallery(get_the_content());
+                $content = str_replace(']]>', ']]&gt;', apply_filters('the_content', $content));
+                if (get_post_gallery()) :
+                    $gallery = get_post_gallery(get_the_ID(), false); ?>
 
                     <!-- Flickity HTML init -->
                     <div class="carousel" data-flickity='{
@@ -48,11 +48,11 @@ get_header();
                         "prevNextButtons": false
                         }'>
 
-                    <?php foreach( $gallery['src'] as $src ) : ?>
-                        <div class="carousel-cell" style="background-image: url('<?php echo $src ?>')">
-                        </div>
-                        <?php
-                    endforeach;?>
+                        <?php foreach ($gallery['src'] as $src) : ?>
+                            <div class="carousel-cell" style="background-image: url('<?php echo $src ?>')">
+                            </div>
+                            <?php
+                        endforeach; ?>
                     </div>
                 <?php endif;
                 ?>
@@ -65,6 +65,7 @@ get_header();
 
             <?php endif; ?>
         </div>
+    </div>
 </div>
 
 <?php get_footer(); ?>
