@@ -6,19 +6,22 @@
 get_header();
 
 ?>
-<section class="template-subheader">
-    <?php
+<section class="container-fluid template-subheader">
+    <div class="template-subheader-content container">
+        <h1><?php the_title(); ?></h1>
 
-    if (function_exists('fil_ariane'))
-        echo fil_ariane();
-
-    ?>
+        <div class="template-subheader-ariane">
+            <?php
+            if (function_exists('fil_ariane'))
+                echo fil_ariane();
+            ?>
+        </div>
+    </div>
 </section>
 
 <div class="background-fixed">
     <div class="container">
         <div class="background-fixed-title">
-            <?php the_title(); ?>
         </div>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

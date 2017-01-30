@@ -165,13 +165,14 @@ h1, h2, h3 {
 .carousel {
   &-content {
     display: none;
-    text-align: center;
+    text-align: left;
     color: $tri;
-    padding: 20px;
   }
   &-title {
     background: rgba(34, 34, 34, 0.8);
     h2 {
+      font-size: $big;
+      letter-spacing: 5px;
       margin: 0;
       border-bottom: 1px solid $pri;
     }
