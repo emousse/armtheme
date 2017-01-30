@@ -1,84 +1,82 @@
-jQuery( document ).ready( function( $ ) {
-  // $() will work as an alias for jQuery() inside of this function
-  $('#header__icon').click(function(e){
-    e.preventDefault();
-    $('body').toggleClass('with--sidebar');
-  });
+jQuery(document).ready(function ($) {
+    // $() will work as an alias for jQuery() inside of this function
+    $('#header__icon').click(function (e) {
+        e.preventDefault();
+        $('body').toggleClass('with--sidebar');
+    });
 
-  $('#site-cache').click(function(e){
-    $('body').removeClass('with--sidebar');
-  });
+    $('#site-cache').click(function (e) {
+        $('body').removeClass('with--sidebar');
+    });
 
-  $('#up').click(function(e){
-    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-  })
+    $('#up').click(function (e) {
+        window.scroll({top: 0, left: 0, behavior: 'smooth'});
+    })
 
-  //"quantité" de scroll vertical
-  function scrollY(){
-    var supportPageOffset = window.pageXOffset !== undefined;
-    var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+    var mainHeader = $('.header'),
+        secondaryNavigation = $('.cd-secondary-nav'),
+        headerHeight = mainHeader.height();
 
-    return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
-  }
+    //set scrolling variables
+    var scrolling = false,
+        previousTop = 0,
+        currentTop = 0,
+        scrollDelta = 10,
+        scrollOffset = 150;
 
-  var element  = document.querySelector('.header');
-  var siteContent = document.querySelector('.site-content');
-  var rect = element.getBoundingClientRect();
-  //position de l'element "top" par rapport au haut de la fenetre.
-  var top = rect.top + scrollY();
+    $(window).on('scroll', function () {
+        if (!scrolling) {
+            scrolling = true;
+            (!window.requestAnimationFrame) ?
+                setTimeout(autoHideHeader, 250) : requestAnimationFrame(autoHideHeader);
+        }
+    });
 
-  var onScroll = function() {
-    var hasScrollClass = element.classList.contains('fixed');
-    if(scrollY()>top && !hasScrollClass){
-      element.classList.add('fixed')
-      element.style.width = rect.width + "px";
-      $('#up').addClass('up--show');
-      if(rect.width>768)
-        siteContent.style.paddingTop = rect.height + "px";
-    } else if (scrollY()<top && hasScrollClass){
-      element.classList.remove('fixed');
-      siteContent.style.paddingTop = "";
-      $('#up').removeClass('up--show')
+    $(window).on('resize', function () {
+        headerHeight = mainHeader.height();
+    });
+
+    function autoHideHeader() {
+        var currentTop = $(window).scrollTop();
+        checkSimpleNavigation(currentTop);
+
+        previousTop = currentTop;
+        scrolling = false;
     }
-  }
 
-  var onResize = function(){
-    element.style.width = "auto";
-    element.classList.remove('fixed');
-    siteContent.style.paddingTop = "";
+    function checkSimpleNavigation(currentTop) {
+        //there's no secondary nav or secondary nav is below primary nav
+        if (previousTop - currentTop > scrollDelta) {
+            //if scrolling up...
+            mainHeader.removeClass('is-hidden');
+            $('#up').removeClass('up--show');
+        } else if (currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
+            //if scrolling down...
+            mainHeader.addClass('is-hidden');
+            $('#up').addClass('up--show');
+        }
+    }
 
-    //on recalcule les variables
-    rect = element.getBoundingClientRect();
-    top = rect.top + scrollY();
+    //event for flickity  and velocity effect on carousel content
+    $('.carousel-content, .carousel-title, .carousel-body').velocity('transition.slideUpIn', {stagger: 250});
+    var $carousel = $('.carousel').flickity();
+    var flkty = $carousel.data('flickity');
+    $carousel.on('settle.flickity', function () {
+        //index of current slide flkty.selectedIndex
+    });
+    //init isotope
+    var $grid = $('.project-grids').isotope({
+        itemSelector: '.projects-item',
+        layoutMode: 'fitRows'
+    });
 
-    onScroll();
-  }
-  window.addEventListener('scroll', onScroll);
-
-  window.addEventListener('resize', onResize);
-
-  //event for flickity  and velocity effect on carousel content
-  $('.carousel-content, .carousel-title, .carousel-body').velocity('transition.slideUpIn', { stagger: 250 });
-  var $carousel = $('.carousel').flickity();
-  var flkty = $carousel.data('flickity');
-  $carousel.on( 'settle.flickity', function() {
-    //index of current slide flkty.selectedIndex
-  });
-  //init isotope
-  var $grid = $('.project-grids').isotope({
-    itemSelector: '.projects-item',
-    layoutMode: 'fitRows'
-  });
-
-  // bind filter button click
-  $('.filters-button-group').on( 'click', 'li', function() {
-    var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
-    $grid.isotope({ filter: filterValue });
-  });
+    // bind filter button click
+    $('.filters-button-group').on('click', 'li', function () {
+        var filterValue = $(this).attr('data-filter');
+        // use filterFn if matches value
+        $grid.isotope({filter: filterValue});
+    });
 // change is-checked class on buttons
 
 
-
-
-} );
+});
