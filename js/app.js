@@ -67,7 +67,7 @@ jQuery(document).ready(function ($) {
     //init isotope
     var $grid = $('.project-grids').isotope({
         itemSelector: '.projects-item',
-        layoutMode: 'fitRows'
+        percentPosition: true,
     });
 
     // bind filter button click

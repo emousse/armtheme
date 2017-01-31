@@ -107,12 +107,12 @@ a {
   transition: transform .5s, -webkit-transform .5s;
 }
 
-/* line 56, ../sass/armtheme.scss */
+/* line 57, ../sass/armtheme.scss */
 .header.is-hidden {
   transform: translateY(-100%);
 }
 
-/* line 59, ../sass/armtheme.scss */
+/* line 61, ../sass/armtheme.scss */
 .header-secondary {
   height: 66px;
   line-height: 66px;
@@ -121,7 +121,7 @@ a {
   z-index: 2;
 }
 
-/* line 67, ../sass/armtheme.scss */
+/* line 69, ../sass/armtheme.scss */
 .header-primary {
   height: 66px;
   line-height: 66px;
@@ -133,7 +133,7 @@ a {
   background-color: white;
 }
 
-/* line 78, ../sass/armtheme.scss */
+/* line 80, ../sass/armtheme.scss */
 .header__logo {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
@@ -142,7 +142,7 @@ a {
   float: left;
 }
 
-/* line 87, ../sass/armtheme.scss */
+/* line 89, ../sass/armtheme.scss */
 .up {
   line-height: 50px;
   text-align: center;
@@ -170,7 +170,7 @@ a {
   transform: translateY(60px);
 }
 
-/* line 106, ../sass/armtheme.scss */
+/* line 108, ../sass/armtheme.scss */
 .up--show {
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -178,7 +178,7 @@ a {
   transform: translateY(0px);
 }
 
-/* line 110, ../sass/armtheme.scss */
+/* line 112, ../sass/armtheme.scss */
 .footer {
   height: 66px;
   line-height: 66px;
@@ -186,55 +186,55 @@ a {
   background-color: #373737;
 }
 
-/* line 117, ../sass/armtheme.scss */
+/* line 119, ../sass/armtheme.scss */
 .footer__top {
   padding: 70px 0;
   color: white;
   background-color: #373737;
 }
 
-/* line 123, ../sass/armtheme.scss */
+/* line 125, ../sass/armtheme.scss */
 .footer__bottom {
   padding: 20px 0;
   background-color: #ffd23f;
 }
 
-/* line 128, ../sass/armtheme.scss */
+/* line 130, ../sass/armtheme.scss */
 .widget {
   list-style-type: none;
 }
-/* line 130, ../sass/armtheme.scss */
+/* line 132, ../sass/armtheme.scss */
 .widget-position {
   padding: 0;
   margin: 0;
 }
-/* line 134, ../sass/armtheme.scss */
+/* line 136, ../sass/armtheme.scss */
 .widget-title {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-/* line 142, ../sass/armtheme.scss */
+/* line 144, ../sass/armtheme.scss */
 .fixed {
   position: fixed;
   top: 0;
 }
 
-/* line 147, ../sass/armtheme.scss */
+/* line 149, ../sass/armtheme.scss */
 .menu {
   float: left;
 }
-/* line 149, ../sass/armtheme.scss */
+/* line 151, ../sass/armtheme.scss */
 .menu ul {
   margin: 0;
   padding: 0;
 }
-/* line 152, ../sass/armtheme.scss */
+/* line 154, ../sass/armtheme.scss */
 .menu ul li {
   display: inline-block;
   /* non-flexbox browsers */
 }
-/* line 153, ../sass/armtheme.scss */
+/* line 155, ../sass/armtheme.scss */
 .menu ul li a {
   display: block;
   text-transform: uppercase;
@@ -246,11 +246,11 @@ a {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 160, ../sass/armtheme.scss */
+/* line 162, ../sass/armtheme.scss */
 .menu ul li a:hover, .menu ul li a:focus {
   color: #2d2d2d;
 }
-/* line 165, ../sass/armtheme.scss */
+/* line 167, ../sass/armtheme.scss */
 .menu ul li a:active {
   color: #2d2d2d;
 }
@@ -354,82 +354,86 @@ a {
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
-/* line 180, ../sass/armtheme.scss */
+/* line 182, ../sass/armtheme.scss */
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 187, ../sass/armtheme.scss */
+/* line 189, ../sass/armtheme.scss */
 .carousel-content {
   display: none;
   text-align: left;
   color: #FFFCF2;
 }
-/* line 192, ../sass/armtheme.scss */
+/* line 194, ../sass/armtheme.scss */
 .carousel-title {
   background: rgba(34, 34, 34, 0.8);
 }
-/* line 194, ../sass/armtheme.scss */
+/* line 196, ../sass/armtheme.scss */
 .carousel-title h2 {
   font-size: 2em;
   letter-spacing: 5px;
   margin: 0;
   border-bottom: 1px solid #ffd23f;
 }
-/* line 201, ../sass/armtheme.scss */
+/* line 203, ../sass/armtheme.scss */
 .carousel-body {
   background: rgba(34, 34, 34, 0.5);
 }
 
-/* line 208, ../sass/armtheme.scss */
+/* line 210, ../sass/armtheme.scss */
 .banner {
   padding: 25px 0;
   background-color: #ffd23f;
   text-align: center;
 }
 
-/* line 214, ../sass/armtheme.scss */
+/* line 216, ../sass/armtheme.scss */
 .projects {
   padding: 50px 0;
   background-color: #FFFCF2;
 }
-/* line 218, ../sass/armtheme.scss */
+/* line 220, ../sass/armtheme.scss */
 .projects-title ul {
+  text-align: center;
   margin: 0;
   padding: 20px 0;
 }
-/* line 221, ../sass/armtheme.scss */
+/* line 224, ../sass/armtheme.scss */
 .projects-title ul li {
-  margin-right: 10px;
+  margin-right: 15px;
   display: inline-block;
   cursor: pointer;
   border-bottom: 2px solid transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1.3px;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 227, ../sass/armtheme.scss */
+/* line 233, ../sass/armtheme.scss */
 .projects-title ul li:hover, .projects-title ul li:focus {
   color: #ffcd2b;
   border-color: #ffd23f;
 }
-/* line 232, ../sass/armtheme.scss */
+/* line 238, ../sass/armtheme.scss */
 .projects-title ul li:active {
   color: #ffcd2b;
   border-color: #ffd23f;
 }
-/* line 239, ../sass/armtheme.scss */
-.projects-item {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: url(../img/2.jpg);
-  background-size: cover;
-  border: 2px solid #b6b5b4;
+/* line 246, ../sass/armtheme.scss */
+.projects-item p {
+  text-align: justify;
+}
+/* line 249, ../sass/armtheme.scss */
+.projects-item img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* line 249, ../sass/armtheme.scss */
+/* line 256, ../sass/armtheme.scss */
 .background-fixed {
   position: relative;
   padding: 60px 0;
@@ -437,7 +441,7 @@ h1, h2, h3 {
   background-size: cover;
   text-align: center;
 }
-/* line 255, ../sass/armtheme.scss */
+/* line 262, ../sass/armtheme.scss */
 .background-fixed:after {
   position: absolute;
   content: '';
@@ -447,7 +451,7 @@ h1, h2, h3 {
   height: 100%;
   background: rgba(34, 34, 34, 0.8);
 }
-/* line 264, ../sass/armtheme.scss */
+/* line 271, ../sass/armtheme.scss */
 .background-fixed-title {
   font-family: "Montserrat", sans-serif;
   color: #ffd23f;
@@ -455,76 +459,76 @@ h1, h2, h3 {
   z-index: 1;
   padding: 20px 0;
 }
-/* line 271, ../sass/armtheme.scss */
+/* line 278, ../sass/armtheme.scss */
 .background-fixed-body {
   color: #FFFCF2;
   position: relative;
   z-index: 1;
 }
 
-/* line 279, ../sass/armtheme.scss */
+/* line 286, ../sass/armtheme.scss */
 .sidebar {
   text-align: right;
   padding: 50px 0;
 }
-/* line 282, ../sass/armtheme.scss */
+/* line 289, ../sass/armtheme.scss */
 .sidebar h2 {
   margin: 0px;
   margin-bottom: 25px;
   text-transform: uppercase;
 }
-/* line 287, ../sass/armtheme.scss */
+/* line 294, ../sass/armtheme.scss */
 .sidebar ul {
   list-style-type: none;
 }
 
-/* line 295, ../sass/armtheme.scss */
+/* line 302, ../sass/armtheme.scss */
 .blog-content {
   padding: 50px 0 25px;
 }
-/* line 298, ../sass/armtheme.scss */
+/* line 305, ../sass/armtheme.scss */
 .blog-post {
   margin-bottom: 40px;
 }
-/* line 300, ../sass/armtheme.scss */
+/* line 307, ../sass/armtheme.scss */
 .blog-post img {
   max-width: 100%;
   height: auto;
   margin-bottom: 30px;
 }
-/* line 305, ../sass/armtheme.scss */
+/* line 312, ../sass/armtheme.scss */
 .blog-post h2 {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
 }
-/* line 310, ../sass/armtheme.scss */
+/* line 317, ../sass/armtheme.scss */
 .blog-post h2 a {
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 312, ../sass/armtheme.scss */
+/* line 319, ../sass/armtheme.scss */
 .blog-post h2 a:hover, .blog-post h2 a:focus {
   color: #ffd23f;
 }
-/* line 318, ../sass/armtheme.scss */
+/* line 325, ../sass/armtheme.scss */
 .blog-post-body {
   text-align: justify;
 }
-/* line 319, ../sass/armtheme.scss */
+/* line 326, ../sass/armtheme.scss */
 .blog-post-body pre {
   font-family: inherit;
 }
-/* line 324, ../sass/armtheme.scss */
+/* line 331, ../sass/armtheme.scss */
 .blog-post-time {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
 }
-/* line 329, ../sass/armtheme.scss */
+/* line 336, ../sass/armtheme.scss */
 .blog-post-more {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -532,52 +536,52 @@ h1, h2, h3 {
   height: 100%;
   text-align: right;
 }
-/* line 335, ../sass/armtheme.scss */
+/* line 342, ../sass/armtheme.scss */
 .blog-post-more a {
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 337, ../sass/armtheme.scss */
+/* line 344, ../sass/armtheme.scss */
 .blog-post-more a:hover, .blog-post-more a:focus {
   color: #ffd23f;
 }
 
-/* line 347, ../sass/armtheme.scss */
+/* line 354, ../sass/armtheme.scss */
 .template-subheader {
   background-image: url("../img/2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
-/* line 352, ../sass/armtheme.scss */
+/* line 359, ../sass/armtheme.scss */
 .template-subheader-content {
   padding: 50px 0;
 }
-/* line 354, ../sass/armtheme.scss */
+/* line 361, ../sass/armtheme.scss */
 .template-subheader-content h1 {
   font-family: 'Montserrat', sans-serif;
 }
-/* line 358, ../sass/armtheme.scss */
+/* line 365, ../sass/armtheme.scss */
 .template-subheader-ariane {
   float: right;
   color: #FFFCF2;
 }
 
-/* line 366, ../sass/armtheme.scss */
+/* line 373, ../sass/armtheme.scss */
 .template-prestations {
   padding: 50px 0 25px;
 }
-/* line 368, ../sass/armtheme.scss */
+/* line 375, ../sass/armtheme.scss */
 .template-prestations-menu {
   margin: 0 0 30px 0;
 }
-/* line 370, ../sass/armtheme.scss */
+/* line 377, ../sass/armtheme.scss */
 .template-prestations-menu ul, .template-prestations-menu li {
   list-style-type: none;
 }
-/* line 374, ../sass/armtheme.scss */
+/* line 381, ../sass/armtheme.scss */
 .template-prestations-menu .page_item a {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
@@ -589,33 +593,33 @@ h1, h2, h3 {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 381, ../sass/armtheme.scss */
+/* line 388, ../sass/armtheme.scss */
 .template-prestations-menu .page_item a:hover, .template-prestations-menu .page_item a:focus {
   background-color: #ffd23f;
 }
-/* line 385, ../sass/armtheme.scss */
+/* line 392, ../sass/armtheme.scss */
 .template-prestations-menu .page_item a:after {
   content: '>';
   float: right;
 }
-/* line 391, ../sass/armtheme.scss */
+/* line 398, ../sass/armtheme.scss */
 .template-prestations-menu .current_page_item {
   background-color: #ffd23f;
 }
-/* line 396, ../sass/armtheme.scss */
+/* line 403, ../sass/armtheme.scss */
 .template-prestations-content h1, .template-prestations-content h2, .template-prestations-content h3, .template-prestations-content h4 {
   margin: 0 0 20px 0;
 }
-/* line 399, ../sass/armtheme.scss */
+/* line 406, ../sass/armtheme.scss */
 .template-prestations-content p {
   margin: 0 0 15px 0;
 }
 
-/* line 407, ../sass/armtheme.scss */
+/* line 414, ../sass/armtheme.scss */
 .template-arm-apropos {
   padding: 50px 0 25px;
 }
-/* line 409, ../sass/armtheme.scss */
+/* line 416, ../sass/armtheme.scss */
 .template-arm-apropos img {
   max-width: 100%;
   height: auto;

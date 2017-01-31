@@ -38,47 +38,6 @@ get_header();
     </div>
 </section>
 
-<section class="projects">
-    <div class="container">
-        <div class="projects-title">
-            <ul class="filters-button-group">
-                <li data-filter=".parquet">Parquets</li>
-                <li data-filter=".cuisine">Cuisine</li>
-                <li data-filter=".renovation">Renovation</li>
-            </ul>
-        </div>
-        <div class="project-grids">
-            <div class="projects-item parquet">
-                <h3>Parquets</h3>
-            </div>
-            <div class="projects-item parquet">
-                <h3>Parquets</h3>
-            </div>
-            <div class="projects-item parquet">
-                <h3>Parquets</h3>
-            </div>
-            <div class="projects-item cuisine">
-                <h3>Cuisine</h3>
-            </div>
-            <div class="projects-item cuisine">
-                <h3>Cuisine</h3>
-            </div>
-            <div class="projects-item cuisine">
-                <h3>Cuisine</h3>
-            </div>
-            <div class="projects-item renovation">
-                <h3>Renovation</h3>
-            </div>
-            <div class="projects-item renovation">
-                <h3>Renovation</h3>
-            </div>
-            <div class="projects-item renovation">
-                <h3>Renovation</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
 <div class="background-fixed">
     <div class="container">
         <div class="background-fixed-title">
