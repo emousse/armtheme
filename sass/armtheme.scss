@@ -101,7 +101,7 @@ a {
   height: 50px;
   background-color: $sec;
   @include border-radius(2px);
-  @include transition-duration(0.2s);
+  @include transition-duration(0.5s);
   @include transform(translateY(60px));
 }
 
@@ -157,7 +157,7 @@ a {
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
         padding: 0 10px;
-        font-size: 1em;
+        font-size: $small;
         @include transition-duration(0.2s);
         &:hover,
         &:focus {
@@ -416,5 +416,16 @@ h1, h2, h3 {
   img {
     max-width: 100%;
     height: auto;
+  }
+}
+
+// ACCUEIL TEMPLATE
+
+.template-accueil-links{
+  text-align: center;
+  padding: 25px 0;
+  img{
+    width: auto;
+    height: 58px;
   }
 }

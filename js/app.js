@@ -57,6 +57,14 @@ jQuery(document).ready(function ($) {
         }
     }
 
+    //flickity init
+    $('.template-prestations-carousel').flickity({
+        cellAlign: "left",
+        contain: true ,
+        pageDots: false,
+        prevNextButtons: false,
+        autoPlay: true
+    })
     //event for flickity  and velocity effect on carousel content
     $('.carousel-content, .carousel-title, .carousel-body').velocity('transition.slideUpIn', {stagger: 250});
     var $carousel = $('.carousel').flickity();

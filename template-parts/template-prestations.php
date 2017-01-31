@@ -41,13 +41,7 @@ get_header();
                     $gallery = get_post_gallery(get_the_ID(), false); ?>
 
                     <!-- Flickity HTML init -->
-                    <div class="carousel" data-flickity='{
-                        "cellAlign": "left",
-                        "contain": true ,
-                        "pageDots": "false",
-                        "prevNextButtons": false
-                        }'>
-
+                    <div class="template-prestations-carousel">
                         <?php foreach ($gallery['src'] as $src) : ?>
                             <div class="carousel-cell" style="background-image: url('<?php echo $src ?>')">
                             </div>

@@ -160,10 +160,10 @@ a {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   -moz-transform: translateY(60px);
   -ms-transform: translateY(60px);
   -webkit-transform: translateY(60px);
@@ -240,7 +240,7 @@ a {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   padding: 0 10px;
-  font-size: 1em;
+  font-size: 0.8em;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
@@ -607,4 +607,15 @@ h1, h2, h3 {
 .template-arm-apropos img {
   max-width: 100%;
   height: auto;
+}
+
+/* line 424, ../sass/armtheme.scss */
+.template-accueil-links {
+  text-align: center;
+  padding: 25px 0;
+}
+/* line 427, ../sass/armtheme.scss */
+.template-accueil-links img {
+  width: auto;
+  height: 58px;
 }
