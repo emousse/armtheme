@@ -10,18 +10,6 @@
     @include transform(translateX(0px));
   }
 
-  .site-content{
-    padding-top: 0;
-  }
-
-  .header{
-    position: static;
-  }
-
-  .topbar{
-    display: none;
-  }
-
   .header__icon{
     position: relative;
     display: block;
@@ -47,7 +35,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    bottom: 0;
     background-color: darken($pri, 5);
 
     width: $menu-width;
