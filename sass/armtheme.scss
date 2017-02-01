@@ -75,6 +75,10 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
+  &-infos{
+    font-size: $normal;
+    font-family: 'Montserrat', sans-serif;
+  }
 }
 
 .header__logo {
@@ -215,12 +219,11 @@ h1, h2, h3 {
 
 .projects {
   padding: 50px 0;
-  background-color: $tri;
   &-title {
     ul {
       text-align: center;
       margin: 0;
-      padding: 20px 0;
+      padding-bottom: 20px;
       li {
         margin-right: 15px;
         display: inline-block;

@@ -23,7 +23,12 @@
         <header class="header">
             <div class="header-primary">
                 <div class="container">
-                    <span>email@email.com</span>
+                    <div class="header-primary-infos">
+                        <span>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            email@email.com
+                        </span>
+                    </div>
                 </div>
             </div>
             <!-- /topbar -->

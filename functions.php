@@ -14,6 +14,9 @@ function load_arm_css()
 
     wp_register_style('bootstrap_grid', get_template_directory_uri() . '/css/bootstrap-grid.min.css', array(), '1.0', 'all');
     wp_enqueue_style('bootstrap_grid'); // Enqueue it!
+
+    wp_register_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('font-awesome'); // Enqueue it!
 }
 
 //load all js
