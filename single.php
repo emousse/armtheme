@@ -1,5 +1,18 @@
 <?php get_header(); ?>
 
+<section class="container-fluid template-subheader">
+    <div class="template-subheader-content container">
+        <h1><?php the_title(); ?></h1>
+
+        <div class="template-subheader-ariane">
+            <?php
+            if (function_exists('fil_ariane'))
+                echo fil_ariane();
+            ?>
+        </div>
+    </div>
+</section>
+
 <div class="container">
     <div class="row">
         <div class="col-md-8">

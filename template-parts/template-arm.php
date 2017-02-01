@@ -11,12 +11,12 @@ get_header();
         <h1><?php the_title(); ?></h1>
 
         <div class="template-subheader-ariane">
-            <?php
-            if (function_exists('fil_ariane'))
-                echo fil_ariane();
-            ?>
-        </div>
-    </div>
+    <?php
+    if (function_exists('fil_ariane'))
+        echo fil_ariane();
+    ?>
+</div>
+</div>
 </section>
 
 <section class="template-arm-apropos">

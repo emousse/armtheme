@@ -125,7 +125,7 @@ a {
 .header-primary {
   height: 66px;
   line-height: 66px;
-  text-align: center;
+  text-align: left;
   background: url(../img/ls.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -618,4 +618,28 @@ h1, h2, h3 {
 .template-accueil-links img {
   width: auto;
   height: 58px;
+}
+
+/* line 435, ../sass/armtheme.scss */
+.error404 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+/* line 438, ../sass/armtheme.scss */
+.error404-title {
+  color: #373737;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+/* line 443, ../sass/armtheme.scss */
+.error404 a {
+  color: #ffd23f;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 446, ../sass/armtheme.scss */
+.error404 a:hover, .error404 a:focus {
+  color: #373737;
 }

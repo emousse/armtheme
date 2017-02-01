@@ -22,7 +22,9 @@
         <!-- topbar -->
         <header class="header">
             <div class="header-primary">
-
+                <div class="container">
+                    <span>email@email.com</span>
+                </div>
             </div>
             <!-- /topbar -->
             <!-- header -->
