@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 1, ../sass/partials/_buttons.scss */
-.blue-btn {
+.blue-btn, .wpcf7-submit {
   display: inline-block;
   position: relative;
   font-family: 'Montserrat', sans-serif;
@@ -11,7 +11,6 @@
   color: #373737;
   text-transform: uppercase;
   font-size: 0.9em;
-  font-size: 34px;
   line-height: 34px;
   font-weight: normal;
   padding: 0 24px;
@@ -25,14 +24,14 @@
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out;
 }
-/* line 19, ../sass/partials/_buttons.scss */
-.blue-btn:hover, .blue-btn:focus {
+/* line 18, ../sass/partials/_buttons.scss */
+.blue-btn:hover, .wpcf7-submit:hover, .blue-btn:focus, .wpcf7-submit:focus {
   color: #FFFCF2;
   text-decoration: none;
   outline: none;
 }
-/* line 26, ../sass/partials/_buttons.scss */
-.blue-btn:active {
+/* line 25, ../sass/partials/_buttons.scss */
+.blue-btn:active, .wpcf7-submit:active {
   top: 1px;
 }
 
@@ -41,16 +40,16 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-/* line 37, ../sass/partials/_buttons.scss */
-.blue-btn {
+/* line 36, ../sass/partials/_buttons.scss */
+.blue-btn, .wpcf7-submit {
   background-color: transparent;
 }
-/* line 41, ../sass/partials/_buttons.scss */
-.blue-btn:hover, .blue-btn:focus {
+/* line 40, ../sass/partials/_buttons.scss */
+.blue-btn:hover, .blue-btn:focus, .wpcf7-submit:hover, .wpcf7-submit:focus {
   background-color: #ffcd2b;
 }
-/* line 46, ../sass/partials/_buttons.scss */
-.blue-btn:active {
+/* line 45, ../sass/partials/_buttons.scss */
+.blue-btn:active, .wpcf7-submit:active {
   background-color: #ffcc26;
 }
 
@@ -90,6 +89,11 @@ a {
 }
 
 /* line 40, ../sass/armtheme.scss */
+.admin-bar .header {
+  top: 32px;
+}
+
+/* line 44, ../sass/armtheme.scss */
 .header {
   position: fixed;
   top: 0;
@@ -107,12 +111,12 @@ a {
   transition: transform .5s, -webkit-transform .5s;
 }
 
-/* line 57, ../sass/armtheme.scss */
+/* line 61, ../sass/armtheme.scss */
 .header.is-hidden {
   transform: translateY(-100%);
 }
 
-/* line 61, ../sass/armtheme.scss */
+/* line 65, ../sass/armtheme.scss */
 .header-secondary {
   height: 66px;
   line-height: 66px;
@@ -121,7 +125,7 @@ a {
   z-index: 2;
 }
 
-/* line 69, ../sass/armtheme.scss */
+/* line 73, ../sass/armtheme.scss */
 .header-primary {
   height: 66px;
   line-height: 66px;
@@ -132,13 +136,13 @@ a {
   background-position: center;
   background-color: white;
 }
-/* line 78, ../sass/armtheme.scss */
+/* line 82, ../sass/armtheme.scss */
 .header-primary-infos {
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 84, ../sass/armtheme.scss */
+/* line 88, ../sass/armtheme.scss */
 .header__logo {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
@@ -147,7 +151,7 @@ a {
   float: left;
 }
 
-/* line 93, ../sass/armtheme.scss */
+/* line 97, ../sass/armtheme.scss */
 .up {
   line-height: 50px;
   text-align: center;
@@ -161,7 +165,7 @@ a {
   z-index: 3;
   width: 50px;
   height: 50px;
-  background-color: #373737;
+  background-color: #2f2f2f;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -175,7 +179,7 @@ a {
   transform: translateY(60px);
 }
 
-/* line 112, ../sass/armtheme.scss */
+/* line 116, ../sass/armtheme.scss */
 .up--show {
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -183,7 +187,7 @@ a {
   transform: translateY(0px);
 }
 
-/* line 116, ../sass/armtheme.scss */
+/* line 120, ../sass/armtheme.scss */
 .footer {
   height: 66px;
   line-height: 66px;
@@ -191,55 +195,56 @@ a {
   background-color: #373737;
 }
 
-/* line 123, ../sass/armtheme.scss */
+/* line 127, ../sass/armtheme.scss */
 .footer__top {
   padding: 70px 0;
   color: white;
   background-color: #373737;
 }
 
-/* line 129, ../sass/armtheme.scss */
+/* line 133, ../sass/armtheme.scss */
 .footer__bottom {
   padding: 20px 0;
   background-color: #ffd23f;
+  color: #373737;
 }
 
-/* line 134, ../sass/armtheme.scss */
+/* line 139, ../sass/armtheme.scss */
 .widget {
   list-style-type: none;
 }
-/* line 136, ../sass/armtheme.scss */
+/* line 141, ../sass/armtheme.scss */
 .widget-position {
   padding: 0;
   margin: 0;
 }
-/* line 140, ../sass/armtheme.scss */
+/* line 145, ../sass/armtheme.scss */
 .widget-title {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-/* line 148, ../sass/armtheme.scss */
+/* line 153, ../sass/armtheme.scss */
 .fixed {
   position: fixed;
   top: 0;
 }
 
-/* line 153, ../sass/armtheme.scss */
+/* line 158, ../sass/armtheme.scss */
 .menu {
   float: left;
 }
-/* line 155, ../sass/armtheme.scss */
+/* line 160, ../sass/armtheme.scss */
 .menu ul {
   margin: 0;
   padding: 0;
 }
-/* line 158, ../sass/armtheme.scss */
+/* line 163, ../sass/armtheme.scss */
 .menu ul li {
   display: inline-block;
   /* non-flexbox browsers */
 }
-/* line 159, ../sass/armtheme.scss */
+/* line 164, ../sass/armtheme.scss */
 .menu ul li a {
   display: block;
   text-transform: uppercase;
@@ -251,11 +256,11 @@ a {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 166, ../sass/armtheme.scss */
+/* line 171, ../sass/armtheme.scss */
 .menu ul li a:hover, .menu ul li a:focus {
   color: #2d2d2d;
 }
-/* line 171, ../sass/armtheme.scss */
+/* line 176, ../sass/armtheme.scss */
 .menu ul li a:active {
   color: #2d2d2d;
 }
@@ -343,51 +348,51 @@ a {
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
-/* line 186, ../sass/armtheme.scss */
+/* line 191, ../sass/armtheme.scss */
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 193, ../sass/armtheme.scss */
+/* line 198, ../sass/armtheme.scss */
 .carousel-content {
   display: none;
   text-align: left;
   color: #FFFCF2;
+  padding-top: 100px;
 }
-/* line 198, ../sass/armtheme.scss */
-.carousel-title {
-  background: rgba(34, 34, 34, 0.8);
-}
-/* line 200, ../sass/armtheme.scss */
+/* line 205, ../sass/armtheme.scss */
 .carousel-title h2 {
-  font-size: 2em;
+  font-size: 3em;
   letter-spacing: 5px;
   margin: 0;
   border-bottom: 1px solid #ffd23f;
 }
-/* line 207, ../sass/armtheme.scss */
+/* line 212, ../sass/armtheme.scss */
 .carousel-body {
-  background: rgba(34, 34, 34, 0.5);
+  font-size: 2em;
+  text-align: justify;
+  color: #FFFCF2;
+  letter-spacing: 3px;
 }
 
-/* line 214, ../sass/armtheme.scss */
+/* line 222, ../sass/armtheme.scss */
 .banner {
   padding: 25px 0;
   background-color: #ffd23f;
   text-align: center;
 }
 
-/* line 220, ../sass/armtheme.scss */
+/* line 228, ../sass/armtheme.scss */
 .projects {
   padding: 50px 0;
 }
-/* line 223, ../sass/armtheme.scss */
+/* line 231, ../sass/armtheme.scss */
 .projects-title ul {
   text-align: center;
   margin: 0;
   padding-bottom: 20px;
 }
-/* line 227, ../sass/armtheme.scss */
+/* line 235, ../sass/armtheme.scss */
 .projects-title ul li {
   margin-right: 15px;
   display: inline-block;
@@ -401,27 +406,27 @@ h1, h2, h3 {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 236, ../sass/armtheme.scss */
+/* line 244, ../sass/armtheme.scss */
 .projects-title ul li:hover, .projects-title ul li:focus {
   color: #ffcd2b;
   border-color: #ffd23f;
 }
-/* line 241, ../sass/armtheme.scss */
+/* line 249, ../sass/armtheme.scss */
 .projects-title ul li:active {
   color: #ffcd2b;
   border-color: #ffd23f;
 }
-/* line 249, ../sass/armtheme.scss */
+/* line 257, ../sass/armtheme.scss */
 .projects-item p {
   text-align: justify;
 }
-/* line 252, ../sass/armtheme.scss */
+/* line 260, ../sass/armtheme.scss */
 .projects-item img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 259, ../sass/armtheme.scss */
+/* line 267, ../sass/armtheme.scss */
 .background-fixed {
   position: relative;
   padding: 60px 0;
@@ -429,7 +434,7 @@ h1, h2, h3 {
   background-size: cover;
   text-align: center;
 }
-/* line 265, ../sass/armtheme.scss */
+/* line 273, ../sass/armtheme.scss */
 .background-fixed:after {
   position: absolute;
   content: '';
@@ -439,7 +444,7 @@ h1, h2, h3 {
   height: 100%;
   background: rgba(34, 34, 34, 0.8);
 }
-/* line 274, ../sass/armtheme.scss */
+/* line 282, ../sass/armtheme.scss */
 .background-fixed-title {
   font-family: "Montserrat", sans-serif;
   color: #ffd23f;
@@ -447,76 +452,76 @@ h1, h2, h3 {
   z-index: 1;
   padding: 20px 0;
 }
-/* line 281, ../sass/armtheme.scss */
+/* line 289, ../sass/armtheme.scss */
 .background-fixed-body {
   color: #FFFCF2;
   position: relative;
   z-index: 1;
 }
 
-/* line 289, ../sass/armtheme.scss */
+/* line 297, ../sass/armtheme.scss */
 .sidebar {
   text-align: right;
   padding: 50px 0;
 }
-/* line 292, ../sass/armtheme.scss */
+/* line 300, ../sass/armtheme.scss */
 .sidebar h2 {
   margin: 0px;
   margin-bottom: 25px;
   text-transform: uppercase;
 }
-/* line 297, ../sass/armtheme.scss */
+/* line 305, ../sass/armtheme.scss */
 .sidebar ul {
   list-style-type: none;
 }
 
-/* line 305, ../sass/armtheme.scss */
+/* line 313, ../sass/armtheme.scss */
 .blog-content {
   padding: 50px 0 25px;
 }
-/* line 308, ../sass/armtheme.scss */
+/* line 316, ../sass/armtheme.scss */
 .blog-post {
   margin-bottom: 40px;
 }
-/* line 310, ../sass/armtheme.scss */
+/* line 318, ../sass/armtheme.scss */
 .blog-post img {
   max-width: 100%;
   height: auto;
   margin-bottom: 30px;
 }
-/* line 315, ../sass/armtheme.scss */
+/* line 323, ../sass/armtheme.scss */
 .blog-post h2 {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
 }
-/* line 320, ../sass/armtheme.scss */
+/* line 328, ../sass/armtheme.scss */
 .blog-post h2 a {
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 322, ../sass/armtheme.scss */
+/* line 330, ../sass/armtheme.scss */
 .blog-post h2 a:hover, .blog-post h2 a:focus {
   color: #ffd23f;
 }
-/* line 328, ../sass/armtheme.scss */
+/* line 336, ../sass/armtheme.scss */
 .blog-post-body {
   text-align: justify;
 }
-/* line 329, ../sass/armtheme.scss */
+/* line 337, ../sass/armtheme.scss */
 .blog-post-body pre {
   font-family: inherit;
 }
-/* line 334, ../sass/armtheme.scss */
+/* line 342, ../sass/armtheme.scss */
 .blog-post-time {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
 }
-/* line 339, ../sass/armtheme.scss */
+/* line 347, ../sass/armtheme.scss */
 .blog-post-more {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -524,52 +529,52 @@ h1, h2, h3 {
   height: 100%;
   text-align: right;
 }
-/* line 345, ../sass/armtheme.scss */
+/* line 353, ../sass/armtheme.scss */
 .blog-post-more a {
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 347, ../sass/armtheme.scss */
+/* line 355, ../sass/armtheme.scss */
 .blog-post-more a:hover, .blog-post-more a:focus {
   color: #ffd23f;
 }
 
-/* line 357, ../sass/armtheme.scss */
+/* line 365, ../sass/armtheme.scss */
 .template-subheader {
   background-image: url("../img/2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
-/* line 362, ../sass/armtheme.scss */
+/* line 370, ../sass/armtheme.scss */
 .template-subheader-content {
   padding: 50px 0;
 }
-/* line 364, ../sass/armtheme.scss */
+/* line 372, ../sass/armtheme.scss */
 .template-subheader-content h1 {
   font-family: 'Montserrat', sans-serif;
 }
-/* line 368, ../sass/armtheme.scss */
+/* line 376, ../sass/armtheme.scss */
 .template-subheader-ariane {
   float: right;
   color: #FFFCF2;
 }
 
-/* line 376, ../sass/armtheme.scss */
+/* line 384, ../sass/armtheme.scss */
 .template-prestations {
   padding: 50px 0 25px;
 }
-/* line 378, ../sass/armtheme.scss */
+/* line 386, ../sass/armtheme.scss */
 .template-prestations-menu {
   margin: 0 0 30px 0;
 }
-/* line 380, ../sass/armtheme.scss */
+/* line 388, ../sass/armtheme.scss */
 .template-prestations-menu ul, .template-prestations-menu li {
   list-style-type: none;
 }
-/* line 384, ../sass/armtheme.scss */
+/* line 392, ../sass/armtheme.scss */
 .template-prestations-menu .page_item a {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
@@ -581,61 +586,61 @@ h1, h2, h3 {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 391, ../sass/armtheme.scss */
+/* line 399, ../sass/armtheme.scss */
 .template-prestations-menu .page_item a:hover, .template-prestations-menu .page_item a:focus {
   background-color: #ffd23f;
 }
-/* line 395, ../sass/armtheme.scss */
+/* line 403, ../sass/armtheme.scss */
 .template-prestations-menu .page_item a:after {
   content: '>';
   float: right;
 }
-/* line 401, ../sass/armtheme.scss */
+/* line 409, ../sass/armtheme.scss */
 .template-prestations-menu .current_page_item {
   background-color: #ffd23f;
 }
-/* line 406, ../sass/armtheme.scss */
+/* line 414, ../sass/armtheme.scss */
 .template-prestations-content h1, .template-prestations-content h2, .template-prestations-content h3, .template-prestations-content h4 {
   margin: 0 0 20px 0;
 }
-/* line 409, ../sass/armtheme.scss */
+/* line 417, ../sass/armtheme.scss */
 .template-prestations-content p {
   margin: 0 0 15px 0;
 }
 
-/* line 417, ../sass/armtheme.scss */
+/* line 425, ../sass/armtheme.scss */
 .template-arm-apropos {
   padding: 50px 0 25px;
 }
-/* line 419, ../sass/armtheme.scss */
+/* line 427, ../sass/armtheme.scss */
 .template-arm-apropos img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 427, ../sass/armtheme.scss */
+/* line 435, ../sass/armtheme.scss */
 .template-accueil-links {
   text-align: center;
   padding: 50px 0 25px;
 }
-/* line 430, ../sass/armtheme.scss */
+/* line 438, ../sass/armtheme.scss */
 .template-accueil-links img {
   width: auto;
   height: 58px;
 }
 
-/* line 438, ../sass/armtheme.scss */
+/* line 446, ../sass/armtheme.scss */
 .error404 {
   text-align: center;
   padding-bottom: 25px;
 }
-/* line 441, ../sass/armtheme.scss */
+/* line 449, ../sass/armtheme.scss */
 .error404-title {
   color: #373737;
   font-size: 2em;
   font-family: 'Montserrat', sans-serif;
 }
-/* line 446, ../sass/armtheme.scss */
+/* line 454, ../sass/armtheme.scss */
 .error404 a {
   color: #ffd23f;
   -moz-transition-duration: 0.2s;
@@ -643,7 +648,7 @@ h1, h2, h3 {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 449, ../sass/armtheme.scss */
+/* line 457, ../sass/armtheme.scss */
 .error404 a:hover, .error404 a:focus {
   color: #373737;
 }

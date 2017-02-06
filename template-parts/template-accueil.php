@@ -12,7 +12,7 @@ get_header();
          data-flickity='{ "cellAlign": "left"}'>
         <div class="carousel-cell" style="background-image: url('<?php bloginfo('template_url'); ?>/img/1.jpg')">
             <div class="carousel-content container">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="carousel-title">
                         <h2>HELLO</h2>
                     </div>
@@ -45,7 +45,9 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <img src="<?php bloginfo('template_url') ?>/img/icons/tools_3.png" alt="">
+                    <div class="template-accueil-links-img">
+                        <img src="<?php bloginfo('template_url') ?>/img/icons/tools_3.png" alt="">
+                    </div>
                     <h2><a href="<?php bloginfo('url'); ?>/services-prestations/menuiserie-ossature-bois/">Menuiserie et
                             ossature bois</a></h2>
                 </div>

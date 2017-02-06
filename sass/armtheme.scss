@@ -37,6 +37,10 @@ a {
 
 // HEADER
 
+.admin-bar .header {
+  top: 32px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -103,7 +107,7 @@ a {
   z-index: 3;
   width: 50px;
   height: 50px;
-  background-color: $sec;
+  background-color: darken($sec,3);
   @include border-radius(2px);
   @include transition-duration(0.5s);
   @include transform(translateY(60px));
@@ -129,6 +133,7 @@ a {
 .footer__bottom {
   padding: 20px 0;
   background-color: $pri;
+  color: $sec
 }
 
 .widget {
@@ -194,18 +199,21 @@ h1, h2, h3 {
     display: none;
     text-align: left;
     color: $tri;
+    padding-top: 100px;
   }
   &-title {
-    background: rgba(34, 34, 34, 0.8);
     h2 {
-      font-size: $big;
+      font-size: 3em;
       letter-spacing: 5px;
       margin: 0;
       border-bottom: 1px solid $pri;
     }
   }
   &-body {
-    background: rgba(34, 34, 34, 0.5);
+    font-size: $big;
+    text-align: justify;
+    color: $tri;
+    letter-spacing: 3px;
   }
 }
 

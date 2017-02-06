@@ -2,7 +2,6 @@
 //Load all css
 function load_arm_css()
 {
-
     wp_register_style('armtheme', get_template_directory_uri() . '/stylesheets/armtheme.css', array(), time(), 'all');
     wp_enqueue_style('armtheme'); // Enqueue it!
 
@@ -64,9 +63,27 @@ function load_arm_js()
 function armtheme_widgets_init()
 {
     register_sidebar(array(
-        'name' => 'Sidebar footer',
-        'id' => 'sidebar-1',
-        'description' => 'Sidebar qui apparait dans le footer',
+        'name' => 'Sidebar footer 1',
+        'id' => 'sidebar-footer-1',
+        'description' => 'Sidebar qui apparait dans le footer à gauche',
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+    register_sidebar(array(
+        'name' => 'Sidebar footer 2',
+        'id' => 'sidebar-footer-2',
+        'description' => 'Sidebar qui apparait dans le footer au milieu',
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+    register_sidebar(array(
+        'name' => 'Sidebar footer 3',
+        'id' => 'sidebar-footer-3',
+        'description' => 'Sidebar qui apparait dans le footer à droite',
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h2 class="widget-title">',

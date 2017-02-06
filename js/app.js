@@ -66,7 +66,7 @@ jQuery(document).ready(function ($) {
         autoPlay: true
     })
     //event for flickity  and velocity effect on carousel content
-    $('.carousel-content, .carousel-title, .carousel-body').velocity('transition.slideUpIn', {stagger: 250});
+    $('.carousel-content, .carousel-title, .carousel-body').velocity('transition.bounceLeftIn', {stagger: 250});
     var $carousel = $('.carousel').flickity();
     var flkty = $carousel.data('flickity');
     $carousel.on('settle.flickity', function () {
