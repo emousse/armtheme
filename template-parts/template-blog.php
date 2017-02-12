@@ -23,7 +23,13 @@ get_header();
         <div class="row">
             <div class="col-md-8">
                 <section class="blog-content">
-                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+                    <?php
+
+                    $args = array('post_type' => 'post');
+                    $category_posts = new WP_Query($args);
+
+                    if ($category_posts->have_posts()) : while ($category_posts->have_posts()) : $category_posts->the_post(); ?>
                         <article class="blog-post" id="blog-post-<?php the_ID() ?>">
                             <?php the_post_thumbnail('custom-size'); ?>
 

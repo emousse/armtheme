@@ -36,7 +36,7 @@ get_header();
                 TOUT POUR LE BOIS
 
             </h2>
-            <a href="#" class="blue-btn">VENEZ VOIR</a>
+            <a href="<?php bloginfo('url'); ?>/realisations/" class="blue-btn">VENEZ VOIR</a>
         </div>
     </section>
 

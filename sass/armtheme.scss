@@ -145,6 +145,7 @@ a {
   &-title {
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
   }
 }
 
@@ -304,6 +305,7 @@ h1, h2, h3 {
   }
   ul {
     list-style-type: none;
+    padding-bottom: 25px;
   }
 }
 
@@ -371,6 +373,7 @@ h1, h2, h3 {
     padding: 50px 0;
     h1 {
       font-family: 'Montserrat', sans-serif;
+      color: $tri;
     }
   }
   &-ariane {
@@ -418,6 +421,11 @@ h1, h2, h3 {
       margin: 0 0 15px 0;
     }
   }
+}
+
+// CONTACT TEMPLATE
+.template-contact{
+  padding: 50px 0;
 }
 
 // ARM TEMPLATE

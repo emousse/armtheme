@@ -3,6 +3,7 @@
     height: 100%;
   }
   .site-container{
+    overflow-x: hidden;
   }
 
   .site-pusher{
@@ -29,6 +30,10 @@
       left: 15px;
       @include box-shadow(0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF);
     }
+  }
+
+  .up{
+    display: none;
   }
 
   .menu{
